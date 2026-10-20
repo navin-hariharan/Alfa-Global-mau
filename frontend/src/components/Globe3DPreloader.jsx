@@ -30,7 +30,7 @@ const Globe3DPreloader = ({ onComplete }) => {
           exit={{ opacity: 0, scale: 1.05 }}
           transition={{ duration: 0.7 }}
           className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden"
-          style={{ background: '#000000' }}
+          style={{ background: '#ffffff' }}
         >
           {/* Subtle cyan particles */}
           <div className="absolute inset-0">
@@ -79,7 +79,7 @@ const Globe3DPreloader = ({ onComplete }) => {
 
               {/* The logo */}
               <motion.img
-                src="/alfa-logo-preloader.png"
+                src={`${process.env.PUBLIC_URL}/alfa-logo.png`}
                 alt="Alfa Global"
                 className="relative w-64 sm:w-80 md:w-96 h-auto"
                 style={{ filter: 'drop-shadow(0 0 25px rgba(0,229,255,0.3))' }}
@@ -102,7 +102,7 @@ const Globe3DPreloader = ({ onComplete }) => {
               transition={{ delay: 0.8 }}
               className="mt-12 w-48 sm:w-56"
             >
-              <div className="h-[2px] bg-white/10 rounded-full overflow-hidden">
+              <div className="h-[2px] bg-slate-200 rounded-full overflow-hidden">
                 <motion.div
                   className="h-full rounded-full"
                   style={{
@@ -114,7 +114,7 @@ const Globe3DPreloader = ({ onComplete }) => {
                   transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
                 />
               </div>
-              <div className="flex justify-between mt-2 text-xs text-white/25 font-light">
+              <div className="flex justify-between mt-2 text-xs text-slate-400 font-light">
                 <span>Loading</span>
                 <span>{Math.round(Math.min(progress, 100))}%</span>
               </div>

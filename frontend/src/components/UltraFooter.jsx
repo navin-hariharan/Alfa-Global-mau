@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const UltraFooter = ({ theme = 'teal' }) => {
   // Teal theme configuration
   const t = {
-      accent: 'text-teal-400',
-      accentHover: 'hover:text-teal-300',
+      accent: 'text-teal-700',
+      accentHover: 'hover:text-teal-600',
       button: 'bg-teal-600 hover:bg-teal-500',
       border: 'border-teal-500/20',
       logoColor: '#2dd4bf'
@@ -30,14 +30,14 @@ const UltraFooter = ({ theme = 'teal' }) => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gradient-to-b from-sky-50 to-white text-slate-900 border-t border-slate-200">
       {/* Main Footer */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="inline-block bg-white rounded-lg px-3 py-2 mb-4"><img src={`${process.env.PUBLIC_URL}/alfa-logo.png`} alt="Alfa Global Group" className="h-9 w-auto" /></div>
-            <p className="text-gray-400 text-sm mb-6 leading-relaxed">
+            <img src={`${process.env.PUBLIC_URL}/alfa-logo.png`} alt="Alfa Global Group" className="h-11 w-auto mb-5" />
+            <p className="text-slate-600 text-sm mb-6 leading-relaxed !text-left">
               A diversified strategic investment and holding company, building enduring enterprises across generations.
             </p>
             <div className="flex gap-3">
@@ -47,7 +47,7 @@ const UltraFooter = ({ theme = 'teal' }) => {
                   href={`https://${social}.com`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 ${t.accentHover} transition-colors`}
+                  className={`w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 ${t.accentHover} transition-colors`}
                 >
                   {social === 'linkedin' && (
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -77,7 +77,7 @@ const UltraFooter = ({ theme = 'teal' }) => {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className={`text-gray-400 text-sm ${t.accentHover} transition-colors`}
+                    className={`text-slate-600 text-sm ${t.accentHover} transition-colors`}
                   >
                     {link.label}
                   </Link>
@@ -94,7 +94,7 @@ const UltraFooter = ({ theme = 'teal' }) => {
                 <li key={company.path}>
                   <Link
                     to={company.path}
-                    className={`text-gray-400 text-sm ${t.accentHover} transition-colors`}
+                    className={`text-slate-600 text-sm ${t.accentHover} transition-colors`}
                   >
                     {company.label}
                   </Link>
@@ -106,14 +106,14 @@ const UltraFooter = ({ theme = 'teal' }) => {
           {/* Office */}
           <div>
             <h4 className={`text-sm font-semibold ${t.accent} uppercase tracking-wider mb-4`}>Office</h4>
-            <div className="text-gray-400 text-sm">
-              <p className="text-white font-medium mb-2">Chennai (HQ)</p>
+            <div className="text-slate-600 text-sm">
+              <p className="text-slate-900 font-medium mb-2">Chennai (HQ)</p>
               <p>No. 6/8, Second Floor, Lakshmi Nagar, 10th Street, Nanganallur, Chennai - 600 061.</p>
             </div>
-            <div className="mt-6 pt-6 border-t border-gray-800">
-              <p className="text-gray-400 text-sm mb-2">Contact Us</p>
-              <p className="text-white text-sm">+91 44-2224-2929</p>
-              <p className="text-white text-sm">+91 73580-65999</p>
+            <div className="mt-6 pt-6 border-t border-slate-200">
+              <p className="text-slate-600 text-sm mb-2">Contact Us</p>
+              <p className="text-slate-900 text-sm">+91 44-2224-2929</p>
+              <p className="text-slate-900 text-sm">+91 73580-65999</p>
               <p className={`${t.accent} text-sm mt-1`}>contact@alfaglobalwealth.com</p>
             </div>
           </div>
@@ -121,9 +121,9 @@ const UltraFooter = ({ theme = 'teal' }) => {
       </div>
 
       {/* Disclaimer */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-slate-200">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-6">
-          <p className="text-gray-500 text-xs leading-relaxed">
+          <p className="text-slate-500 text-xs leading-relaxed">
             Alfa Global Group invests only its own capital. It does not provide investment advice, portfolio management, research
             recommendations, or broking services, and does not accept money from the public for investment. Nothing on this website is an
             offer, solicitation, or recommendation to buy or sell any security or financial product. Group companies that carry on any
@@ -133,10 +133,10 @@ const UltraFooter = ({ theme = 'teal' }) => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-slate-200">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm text-center sm:text-left">
+            <p className="text-slate-500 text-sm text-center sm:text-left">
               © {new Date().getFullYear()} Alfa Global Group. All rights reserved.
             </p>
             <div className="flex flex-col items-center sm:items-end gap-2">
@@ -144,10 +144,10 @@ const UltraFooter = ({ theme = 'teal' }) => {
                 href="https://techbook.co.in/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-xs text-gray-500 hover:text-gray-300 transition-colors"
+                className="flex items-center gap-2 text-xs text-slate-500 hover:text-slate-800 transition-colors"
               >
                 <span>Website Powered by</span>
-                <span className="font-semibold text-teal-400">Techbook Technologies</span>
+                <span className="font-semibold text-teal-700">Techbook Technologies</span>
                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
             </div>
