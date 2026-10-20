@@ -22,8 +22,8 @@ const UltraFooter = ({ theme = 'teal' }) => {
   const companies = [
     { label: 'Alfa Global Wealth Advisors', path: '/alfa-global-wealth-advisors' },
     { label: 'Alfa Star Dynamics', path: '/alfa-star-dynamics' },
-    { label: 'Alfa Zillion Traders', path: '/alfa-zillion-traders' },
-    { label: 'Gazillion Capital', path: '/gazillion-capital' },
+    { label: 'Alfa Zillion Traders LLP', path: '/alfa-zillion-traders' },
+    { label: 'Gazillion Capital Pvt Ltd', path: '/gazillion-capital' },
     { label: 'MK Dairy Farms', path: '/mk-dairy-farms' },
     { label: 'Cyberhakz', path: '/cyberhakz' },
     { label: 'Dhanveir Groups Shipping', path: '/dhanveir-groups-shipping' }
@@ -37,7 +37,7 @@ const UltraFooter = ({ theme = 'teal' }) => {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <img src={`${process.env.PUBLIC_URL}/alfa-logo.png`} alt="Alfa Global Group" className="h-11 w-auto mb-5" />
-            <p className="text-slate-600 text-sm mb-6 leading-relaxed !text-left">
+            <p className="text-slate-600 text-sm mb-6 leading-relaxed">
               A diversified strategic investment and holding company, building enduring enterprises across generations.
             </p>
             <div className="flex gap-3">

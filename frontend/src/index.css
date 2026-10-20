@@ -14,14 +14,20 @@ body {
 }
 
 /* Global justified text for all paragraphs */
-p {
-  text-align: left;
+p, li, dd {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: break-word;
 }
 
-@media (min-width: 768px) {
-  p {
-    text-align: justify;
-  }
+/* Centred headers and call-to-action blocks keep their centred lines */
+.text-center p,
+.text-center li,
+p.text-center {
+  text-align: justify;
+  text-align-last: center;
 }
 
 
@@ -201,3 +207,7 @@ html {
 .stagger-4 { animation-delay: 0.4s; }
 .stagger-5 { animation-delay: 0.5s; }
 .stagger-6 { animation-delay: 0.6s; }
+/* Slide-in animations start off-canvas; keep them from adding a sideways scroll on phones */
+main {
+  overflow-x: clip;
+}

@@ -53,7 +53,9 @@ const UltraHome = ({ theme = 'teal' }) => {
     { name: 'Alfa Star Dynamics', logo: '/logos/alfa-star.png', desc: 'Strategic holdings across the maritime and industrial sectors.', link: '/alfa-star-dynamics' },
     { name: 'Dhanveir Groups Shipping', logo: '/logos/dhanveir.png', desc: 'Ownership and operation of Indian-flagged dry bulk vessels.', link: '/dhanveir-groups-shipping' },
     { name: 'MK Dairy Farms', logo: null, desc: 'Dairy, agriculture, and natural resource distribution.', link: '/mk-dairy-farms' },
-    { name: 'Cyberhakz', logo: '/logos/cyberhakz.png', desc: 'Enterprise-grade cyber security and compliance solutions.', link: '/cyberhakz' }
+    { name: 'Cyberhakz', logo: '/logos/cyberhakz.png', desc: 'Enterprise-grade cyber security and compliance solutions.', link: '/cyberhakz' },
+    { name: 'Gazillion Capital Pvt Ltd', logo: '/logos/gazillion.png', desc: 'A separately operated financial services company with its own management and governance, and a focus on financial literacy.', link: '/gazillion-capital' },
+    { name: 'Alfa Zillion Traders LLP', logo: '/logos/alfa-zillion.png', desc: 'Develops proprietary financial technology and quantitative tools, and transacts solely on its own account.', link: '/alfa-zillion-traders' }
   ];
 
   const coreValues = [
@@ -84,9 +86,9 @@ const UltraHome = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white border-t border-slate-100">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#0f2a3d] mb-12">Our Group Enterprises</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 lg:divide-x divide-slate-200">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12">
             {groupCompanies.map((c) => (
-              <Link key={c.name} to={c.link} className="group py-8 sm:px-6 first:pt-0 sm:first:pt-8 lg:first:pl-0 flex flex-col">
+              <Link key={c.name} to={c.link} className="group border-t border-slate-200 pt-8 pb-10 flex flex-col">
                 <div className="h-20 flex items-center mb-6">
                   {c.logo ? (
                     <img src={`${process.env.PUBLIC_URL}${c.logo}`} alt="" className="max-h-20 w-auto" />
@@ -95,7 +97,7 @@ const UltraHome = ({ theme = 'teal' }) => {
                   )}
                 </div>
                 <h3 className="text-xl font-semibold text-[#0f2a3d] group-hover:text-teal-700 transition-colors">{c.name}</h3>
-                <p className="mt-2 text-slate-600 leading-relaxed" style={{ textAlign: 'left' }}>{c.desc}</p>
+                <p className="mt-2 text-slate-600 leading-relaxed">{c.desc}</p>
               </Link>
             ))}
           </div>
@@ -109,7 +111,7 @@ const UltraHome = ({ theme = 'teal' }) => {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Group Overview</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">Who We Are</h2>
-              <p className="text-gray-600 mb-6 leading-relaxed md:text-justify">
+              <p className="text-gray-600 mb-6 leading-relaxed text-justify">
                 Alfa Global Group is a diversified strategic investment and holding company. Guided by a long-term ownership philosophy, the Group
                 deploys proprietary capital into enterprises and projects that strengthen industries and generate enduring value across generations.
                 Its distinctive strength lies in combining disciplined capital stewardship with entrepreneurial execution, ensuring that every enterprise
@@ -117,7 +119,7 @@ const UltraHome = ({ theme = 'teal' }) => {
               </p>
               <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Our Purpose</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">Why We Exist</h2>
-              <p className="text-gray-600 mb-6 leading-relaxed md:text-justify">
+              <p className="text-gray-600 mb-6 leading-relaxed text-justify">
                 Capital attains its greatest value when it builds enduring institutions. The Group exists to direct resources, expertise, and
                 strategic insight towards ventures that redefine growth, foster innovation, and contribute meaningfully to its enterprises, its
                 partners, and the communities in which it operates.
@@ -159,7 +161,7 @@ const UltraHome = ({ theme = 'teal' }) => {
                     <img src={service.icon} alt={service.title} className="w-12 h-12 object-contain" />
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900">{service.title}</h3>
-                      <p className="text-gray-600 text-sm mt-1 md:text-justify">{service.desc}</p>
+                      <p className="text-gray-600 text-sm mt-1 text-justify">{service.desc}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -204,7 +206,7 @@ const UltraHome = ({ theme = 'teal' }) => {
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-8 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
                 <div className={`${t.heroAccent} mb-4`}>{item.icon}</div>
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-white/60 leading-relaxed md:text-justify">{item.desc}</p>
+                <p className="text-white/60 leading-relaxed text-justify">{item.desc}</p>
               </motion.div>
             ))}
           </div>

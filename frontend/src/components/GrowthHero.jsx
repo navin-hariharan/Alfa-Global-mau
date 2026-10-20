@@ -87,7 +87,7 @@ const GrowthHero = () => (
           <br />
           Building futures.
         </h1>
-        <p className="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-xl" style={{ textAlign: 'left' }}>
+        <p className="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-xl">
           Alfa Global Group is a diversified strategic investment and holding company. Deploying proprietary capital with a long-term
           ownership perspective, the Group builds, acquires, and scales enterprises across agriculture, maritime, infrastructure, and technology.
         </p>
