@@ -35,8 +35,8 @@ const UltraHeader = ({ theme = 'teal' }) => {
   const companyDropdown = [
     { label: 'Alfa Global Wealth Advisors', path: '/alfa-global-wealth-advisors' },
     { label: 'Alfa Star Dynamics', path: '/alfa-star-dynamics' },
-    { label: 'Alfa Zillion Traders', path: '/alfa-zillion-traders' },
-    { label: 'Gazillion Capital', path: '/gazillion-capital' },
+    { label: 'Alfa Zillion Traders LLP', path: '/alfa-zillion-traders' },
+    { label: 'Gazillion Capital Pvt Ltd', path: '/gazillion-capital' },
     { label: 'MK Dairy Farms', path: '/mk-dairy-farms' },
     { label: 'Cyberhakz', path: '/cyberhakz' },
     { label: 'Dhanveir Groups Shipping', path: '/dhanveir-groups-shipping' }
@@ -79,9 +79,9 @@ const UltraHeader = ({ theme = 'teal' }) => {
             {/* Logo */}
             <Link to="/" className="flex items-center group">
               <img 
-                src="https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-global-logo-removebg-preview.png" 
+                src={`${process.env.PUBLIC_URL}/alfa-logo.png`} 
                 alt="Alfa Global Group" 
-                className="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105" 
+                className="h-11 sm:h-14 w-auto transition-transform group-hover:scale-105" 
               />
             </Link>
 
@@ -154,7 +154,7 @@ const UltraHeader = ({ theme = 'teal' }) => {
                 to="/contact"
                 className={`px-6 py-2.5 ${t.button} text-white text-sm font-medium rounded-full transition-all hover:shadow-lg`}
               >
-                Get Started
+                Contact the Group
               </Link>
             </div>
 
@@ -219,7 +219,7 @@ const UltraHeader = ({ theme = 'teal' }) => {
                   to="/contact"
                   className={`mt-4 px-8 py-3 ${t.button} text-white rounded-full font-medium text-center`}
                 >
-                  Get Started
+                  Contact the Group
                 </Link>
               </nav>
               

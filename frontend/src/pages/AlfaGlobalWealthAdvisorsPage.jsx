@@ -1,25 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 const AlfaGlobalWealthAdvisorsPage = ({ theme = 'teal' }) => {
   // Teal theme configuration
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', accentHover: 'hover:bg-teal-700' };
 
-  const [calculatorValues, setCalculatorValues] = useState({ amount: 1000000, years: 10, rate: 12 });
-
-  const calculateReturns = () => {
-    const { amount, years, rate } = calculatorValues;
-    return Math.round(amount * Math.pow(1 + rate / 100, years));
-  };
-
   const coreOfferings = [
-    { title: 'Wealth Creation & Management', desc: 'Comprehensive portfolio management and wealth building strategies tailored to your financial goals.' },
-    { title: 'Business Advisory & Fund-Raising', desc: 'Strategic guidance and capital solutions for businesses seeking growth and expansion.' },
-    { title: 'Technology Implementation', desc: 'Cutting-edge technology solutions to enhance operational efficiency and client experience.' },
-    { title: 'Governance, Risk Management & Compliance (GRC) Advisory', desc: 'Expert advisory on governance structures, risk frameworks, SOPs, and compliance processes.' },
-    { title: 'Assurance Services', desc: 'Audits and internal reviews to ensure operational integrity and regulatory compliance.' },
-    { title: 'Internal Control over Financial Reporting Framework (ICOFR)', desc: 'Robust frameworks for financial reporting controls and oversight.' }
+    { title: 'Stewardship of Group Capital', desc: 'Custody, preservation and long-term stewardship of the Group’s own capital in accordance with policies approved by the Board.' },
+    { title: 'Capital Allocation Across Group Businesses', desc: 'Allocation of proprietary capital to the Group’s operating businesses and strategic holdings, aligned with the Group’s long-term priorities.' },
+    { title: 'Treasury & Liquidity Management', desc: 'Management of the Group’s own liquidity, funding requirements and cash reserves to support the continuity of its operations.' },
+    { title: 'Governance, Risk Management & Compliance (GRC)', desc: 'Oversight of governance structures, risk frameworks, standard operating procedures and compliance processes across Group entities.' },
+    { title: 'Internal Assurance', desc: 'Internal audits and reviews intended to uphold operational integrity and regulatory compliance within the Group.' },
+    { title: 'Internal Control over Financial Reporting (ICOFR)', desc: 'Frameworks for financial reporting controls and oversight across the Group’s entities.' }
   ];
 
   return (
@@ -63,10 +55,13 @@ const AlfaGlobalWealthAdvisorsPage = ({ theme = 'teal' }) => {
               <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/30ee92d8fd38e4ef1cd802b9be5472be1101dbb720790cb5a829cc8f6e3da856.png" alt="Alfa Global Wealth Advisors" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Over a Decade of Experience</span>
+              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Family Office & Treasury Platform</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">Alfa Global Wealth Advisors</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                Alfa Global Wealth Advisors is a leading financial services firm with over a decade of experience across capital markets, credit, asset and portfolio management, wealth management, and asset reconstruction.
+                Alfa Global Wealth Advisors serves as the family office and treasury platform of Alfa Global Group. The Company stewards and allocates the Group’s own capital across its operating businesses and strategic holdings.
+              </p>
+              <p className="text-gray-600 mb-6 leading-relaxed text-justify">
+                The Company does not have external clients. It does not provide investment advice, portfolio management or any other financial service to the public, and it does not accept funds from third parties.
               </p>
             </motion.div>
           </div>
@@ -78,13 +73,13 @@ const AlfaGlobalWealthAdvisorsPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Identity & Reach</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Mandate & Role</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                We deliver bespoke, independent financial advisory services not just to clients across India, but also to international professionals and expatriates worldwide. Leveraging a fully qualified team of Wealth Managers and backed by deep market insights, our client first approach has cultivated a business driven by referrals over 80% of our growth stems from existing clients' recommendations.
+                The Company’s mandate is confined to the Group’s proprietary capital. It works with the Group’s leadership to set capital priorities, maintain appropriate liquidity, and support each operating business in pursuing its long-term objectives. All capital deployed is the Group’s own.
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/2017e9e6ae808ff9352347f47bfb5f89c1ac250aa043a3ca873df0f23e599579.png" alt="Global Reach" className="rounded-2xl shadow-xl w-full h-[350px] object-cover" />
+              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/2017e9e6ae808ff9352347f47bfb5f89c1ac250aa043a3ca873df0f23e599579.png" alt="Mandate and Role" className="rounded-2xl shadow-xl w-full h-[350px] object-cover" />
             </motion.div>
           </div>
         </div>
@@ -94,8 +89,8 @@ const AlfaGlobalWealthAdvisorsPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Core Offerings & Expertise</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-justify">We adopt a holistic and personalized methodology: crafting strategies that align with each client's professional and private wealth dimensions, and working collaboratively to define governance structures, risk frameworks, SOPs, and compliance processes.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Core Functions</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-justify">The Company performs the following functions for Alfa Global Group and its entities. They cover the stewardship of the Group’s capital as well as the governance, risk and control frameworks that support it.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {coreOfferings.map((service, i) => (
@@ -116,12 +111,12 @@ const AlfaGlobalWealthAdvisorsPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/cd479a8a24bbbcaf5ab57e3a996f8da45175d4fe5668fae72e2715ae78b352f7.png" alt="Global Investment" className="rounded-2xl shadow-xl w-full h-[350px] object-cover" />
+              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/cd479a8a24bbbcaf5ab57e3a996f8da45175d4fe5668fae72e2715ae78b352f7.png" alt="Capital Stewardship" className="rounded-2xl shadow-xl w-full h-[350px] object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Alfa Global Access – Global Investment Insights</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Long-Term Capital Stewardship</h2>
               <p className="text-gray-600 leading-relaxed text-justify">
-                Our Alfa Global Access offering empowers clients with tailored investment ideas and support, backed by global research, rigorous due diligence, and cutting edge technology. Clients whether they prefer to manage their own portfolios or opt for a more guided approach benefit from tailored advisory services, alerts on opportunities, and ongoing performance insights across assets, regions, and currencies.
+                The Company takes a measured, long-term approach to the Group’s capital. Before any capital is committed to a Group business or strategic holding, it is subject to internal due diligence, risk assessment and governance review. The Group’s capital is managed solely for the Group’s own account.
               </p>
             </motion.div>
           </div>
@@ -132,45 +127,10 @@ const AlfaGlobalWealthAdvisorsPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className={`p-12 rounded-2xl bg-gradient-to-r ${t.gradient} text-center`}>
-            <h2 className="text-3xl font-bold text-white mb-4">Tone, Values & Company Credentials</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Values & Corporate Information</h2>
             <p className="text-white/90 max-w-4xl mx-auto leading-relaxed text-justify">
-              With an unwavering commitment to clarity, transparency, and long term value, our strategies are designed to evolve with changing market conditions. Alfa Global Wealth Advisors is structured as a private limited company, incorporated in Chennai in 2008, and continues to uphold both regulatory compliance and operational integrity.
+              The Company is guided by clarity, transparency and long-term value. Alfa Global Wealth Advisors is a private limited company incorporated in Chennai in 2008, and it remains committed to regulatory compliance and operational integrity.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Investment Calculator */}
-      <section className={`py-16 sm:py-24 ${t.accentBgLight}`}>
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Planning Tool</span>
-                <h2 className="text-3xl font-bold text-gray-900 mt-3 mb-8">Investment Calculator</h2>
-                <div className="space-y-6">
-                  {[
-                    { label: 'Investment (₹)', key: 'amount', min: 100000, max: 10000000, step: 100000, format: (v) => `₹${(v/100000).toFixed(1)}L` },
-                    { label: 'Period', key: 'years', min: 1, max: 30, step: 1, format: (v) => `${v} Years` },
-                    { label: 'Expected Return', key: 'rate', min: 5, max: 25, step: 1, format: (v) => `${v}%` }
-                  ].map((s) => (
-                    <div key={s.key}>
-                      <div className="flex justify-between mb-2">
-                        <label className="text-gray-700 text-sm font-medium">{s.label}</label>
-                        <span className={`${t.accentText} font-semibold text-sm`}>{s.format(calculatorValues[s.key])}</span>
-                      </div>
-                      <input type="range" min={s.min} max={s.max} step={s.step} value={calculatorValues[s.key]} onChange={(e) => setCalculatorValues({...calculatorValues, [s.key]: parseInt(e.target.value)})} className={`w-full h-2 rounded-full appearance-none cursor-pointer ${t.accentBg}`} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className={`p-8 rounded-2xl bg-gradient-to-br ${t.gradient} text-white text-center`}>
-                <p className="text-white/80 text-sm mb-2">Estimated Future Value</p>
-                <div className="text-5xl font-bold mb-4">₹{(calculateReturns()/10000000).toFixed(2)}Cr</div>
-                <p className="text-white/60 text-sm mb-8">After {calculatorValues.years} years</p>
-                <Link to="/contact" className="inline-block px-8 py-3 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-all">Start Investing</Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>

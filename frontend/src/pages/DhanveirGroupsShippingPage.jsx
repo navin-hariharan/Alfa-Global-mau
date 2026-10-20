@@ -8,8 +8,8 @@ const DhanveirGroupsShippingPage = ({ theme = 'teal' }) => {
   const keyStrengths = [
     { title: 'Maritime Expertise', desc: 'Over three decades of direct maritime experience across ship operations, technical management, and regulatory compliance.' },
     { title: 'Technical Leadership', desc: 'Led by Master Mariners, Marine Engineers, and international maritime advisors with vessel acquisition and fleet operations expertise.' },
-    { title: 'Regulatory Excellence', desc: 'Strong governance, compliance framework, and access to industry intelligence through global regulatory institutions.' },
-    { title: 'Strategic Growth', desc: 'Structured expansion strategy focused on fleet scale, operational efficiency, and participation in coastal and international trade.' }
+    { title: 'Regulatory Excellence', desc: 'Sound governance, a robust compliance framework and engagement with international maritime institutions.' },
+    { title: 'Strategic Growth', desc: 'A structured expansion strategy focused on fleet scale, operational efficiency and participation in coastal and international trade.' }
   ];
 
   const operations = [
@@ -67,7 +67,7 @@ const DhanveirGroupsShippingPage = ({ theme = 'teal' }) => {
                 Dhanveir Groups Shipping Private Limited represents the Group's strategic maritime platform, established to build, own, and operate Indian-flagged vessels across key cargo segments. The company's current focus is dry bulk transportation — including sand, coal, and minerals — forming the foundation of a broader long-term vision to develop a diversified fleet spanning multiple vessel classes and trade routes.
               </p>
               <p className="text-gray-600 leading-relaxed text-justify">
-                The enterprise is led by industry professionals with over three decades of direct maritime experience across ship operations, technical management, regulatory compliance, and strategic fleet development. This depth of expertise enables disciplined decision-making, resilient performance across market cycles, and execution aligned with global operational standards.
+                The enterprise is led by industry professionals with over three decades of direct maritime experience across ship operations, technical management, regulatory compliance, and strategic fleet development. This depth of experience supports disciplined decision-making and execution in line with international operational standards.
               </p>
             </motion.div>
           </div>
@@ -95,8 +95,8 @@ const DhanveirGroupsShippingPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Operations</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-justify">Key operational areas and cargo segments we specialize in.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Operations</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-justify">The Company’s principal operational areas and cargo segments.</p>
           </div>
           <div className="max-w-3xl mx-auto">
             <div className="bg-gray-50 p-8 rounded-2xl">
@@ -137,9 +137,9 @@ const DhanveirGroupsShippingPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className={`p-12 rounded-2xl bg-gradient-to-r ${t.gradient} text-center`}>
-            <h2 className="text-3xl font-bold text-white mb-4">Our Vision</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Vision</h2>
             <p className="text-white/90 max-w-4xl mx-auto leading-relaxed text-justify">
-              Positioned as a long-term asset platform within the Group's portfolio, Dhanveir is pursuing a structured expansion strategy focused on fleet scale, operational efficiency, and participation in both coastal and international trade corridors. The company's objective is to build a durable maritime enterprise defined by disciplined capital deployment, technical excellence, and sustainable growth.
+              Positioned as a long-term asset platform within the Group, Dhanveir is pursuing a structured expansion strategy focused on fleet scale, operational efficiency, and participation in both coastal and international trade corridors. The company's objective is to build a durable maritime enterprise defined by disciplined capital deployment, technical excellence, and sustainable growth.
             </p>
           </div>
         </div>

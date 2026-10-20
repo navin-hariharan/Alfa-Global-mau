@@ -9,33 +9,25 @@ const TermsPage = ({ theme = 'teal' }) => {
   const sections = [
     {
       title: 'Acceptance of Terms',
-      content: `By accessing and using the Alfa Global Group website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.`
+      content: `By accessing and using the Alfa Global Group website, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use this website.`
     },
     {
       title: 'Description of Services',
-      content: `Alfa Global Group provides wealth management, investment advisory, financial consulting, and related services. Our services are intended for qualified investors and may not be available in all jurisdictions. The information provided on this website is for general informational purposes only and does not constitute financial advice.`
+      content: `Alfa Global Group is a strategic investment and holding company that invests solely its own capital. The Group does not provide investment advice, portfolio management, research recommendations, broking, or distribution of financial products, and does not accept funds from the public for investment. The information on this website is provided for general corporate information only and does not constitute an offer, solicitation, or recommendation in respect of any security or financial product. Group companies that undertake any regulated activity do so separately, under their own registrations where applicable.`
     },
     {
       title: 'Eligibility',
-      content: `Our services are available to individuals who are at least 18 years of age and have the legal capacity to enter into binding contracts. By using our services, you represent and warrant that you meet these eligibility requirements.`
+      content: `This website is intended for individuals who are at least 18 years of age and have the legal capacity to enter into binding contracts. By using this website, you represent and warrant that you meet these eligibility requirements.`
     },
     {
-      title: 'Investment Risks',
-      content: `All investments involve risk, including the potential loss of principal. Past performance is not indicative of future results. Before making any investment decisions, you should:
-      • Consult with qualified financial advisors
-      • Carefully consider your investment objectives
-      • Understand the risks involved
-      • Review all offering documents thoroughly
-      
-      Alfa Global Group does not guarantee any specific investment outcomes.`
+      title: 'No Reliance',
+      content: `Nothing on this website should be relied upon as the basis for any investment or financial decision. Visitors should seek independent professional advice before making any such decision. Alfa Global Group accepts no liability for any decision made on the basis of information published on this website.`
     },
     {
       title: 'User Responsibilities',
-      content: `When using our services, you agree to:
+      content: `When using this website, you agree to:
       • Provide accurate and complete information
-      • Maintain the confidentiality of your account credentials
-      • Notify us immediately of any unauthorized access
-      • Use our services only for lawful purposes
+      • Use this website only for lawful purposes
       • Not attempt to interfere with the proper functioning of our website`
     },
     {
@@ -44,11 +36,11 @@ const TermsPage = ({ theme = 'teal' }) => {
     },
     {
       title: 'Limitation of Liability',
-      content: `To the maximum extent permitted by law, Alfa Global Group shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of our services. Our total liability shall not exceed the amount you have paid to us in the twelve months preceding the claim.`
+      content: `To the maximum extent permitted by law, Alfa Global Group shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of this website. `
     },
     {
       title: 'Indemnification',
-      content: `You agree to indemnify and hold harmless Alfa Global Group and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising out of your use of our services or violation of these terms.`
+      content: `You agree to indemnify and hold harmless Alfa Global Group and its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising out of your use of this website or violation of these terms.`
     },
     {
       title: 'Governing Law',
@@ -56,7 +48,7 @@ const TermsPage = ({ theme = 'teal' }) => {
     },
     {
       title: 'Changes to Terms',
-      content: `We reserve the right to modify these Terms of Service at any time. We will notify users of any material changes by posting the updated terms on this page. Your continued use of our services after such changes constitutes acceptance of the new terms.`
+      content: `We reserve the right to modify these Terms of Service at any time. We will notify users of any material changes by posting the updated terms on this page. Your continued use of this website after such changes constitutes acceptance of the new terms.`
     }
   ];
 
@@ -84,7 +76,7 @@ const TermsPage = ({ theme = 'teal' }) => {
             animate={{ opacity: 1, y: 0 }}
             className="text-gray-600 mb-12 text-lg leading-relaxed text-justify"
           >
-            Welcome to Alfa Global Group. These Terms of Service govern your use of our website and services. Please read them carefully before using our platform.
+            Welcome to Alfa Global Group. These Terms of Service govern your use of this website. Please read them carefully before using it.
           </motion.p>
 
           {sections.map((section, i) => (

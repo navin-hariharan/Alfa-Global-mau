@@ -12,10 +12,10 @@ const MKDairyFarmsPage = ({ theme = 'teal' }) => {
   ];
 
   const features = [
-    { title: 'Production & Procurement', desc: 'High-quality production and procurement of dairy, agricultural, and agro-based products.', icon: 'M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z' },
-    { title: 'Import & Export', desc: 'Global import and export operations for dairy products and natural resources.', icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
-    { title: 'Distribution', desc: 'Reliable distribution network catering to both retail and institutional customers.', icon: 'M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0' },
-    { title: 'Quality Focus', desc: 'Commitment to freshness, purity, and nutritional value in all our products.', icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' }
+    { title: 'Production & Procurement', desc: 'Production and procurement of dairy, agricultural and agro-based products to consistent quality standards.', icon: 'M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z' },
+    { title: 'Import & Export', desc: 'Import and export of dairy products and natural resources in international markets.', icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
+    { title: 'Distribution', desc: 'A distribution network serving both retail and institutional customers.', icon: 'M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0' },
+    { title: 'Quality Focus', desc: 'A commitment to freshness, purity and nutritional value across the Company’s product range.', icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' }
   ];
 
   return (
@@ -62,10 +62,10 @@ const MKDairyFarmsPage = ({ theme = 'teal' }) => {
               <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Dairy, Agriculture & Natural Resources</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">MK Dairy Farms</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                MK Dairy Farms is engaged in the production, procurement, import, export, and distribution of a wide range of dairy, agricultural, and agro based products. The company deals in high quality milk, cream, butter, ghee, cheese, eggs, fruits, vegetables, and edible oils, natural river sand catering to both retail and institutional customers.
+                MK Dairy Farms, a company of Alfa Global Group, is engaged in the production, procurement, import, export and distribution of a wide range of dairy, agricultural and agro-based products. Its portfolio includes milk, cream, butter, ghee, cheese, eggs, fruits, vegetables and edible oils, supplied to both retail and institutional customers.
               </p>
               <p className="text-gray-600 leading-relaxed text-justify">
-                MK Dairy Farms also engages in the import, export, and distribution of national river sands, minerals, granites, marbles, and related materials.
+                The Company is also engaged in the import, export and distribution of natural river sand, minerals, granites, marbles and related materials.
               </p>
             </motion.div>
           </div>
@@ -76,7 +76,7 @@ const MKDairyFarmsPage = ({ theme = 'teal' }) => {
       <section className={`py-16 sm:py-24 ${t.accentBgLight}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Operations</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Operations</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, i) => (
@@ -96,7 +96,7 @@ const MKDairyFarmsPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Product Portfolio</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {products.map((category, i) => (
@@ -120,9 +120,9 @@ const MKDairyFarmsPage = ({ theme = 'teal' }) => {
       <section className={`py-16 sm:py-24 ${t.accentBgLight}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className={`p-12 rounded-2xl bg-gradient-to-r ${t.gradient} text-center`}>
-            <h2 className="text-3xl font-bold text-white mb-4">Our Mission</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Mission</h2>
             <p className="text-white/90 max-w-4xl mx-auto leading-relaxed text-justify">
-              With a focus on freshness, purity, and nutritional value, MK Dairy Farms aims to contribute to healthier lifestyles while supporting the agricultural and natural resource economy.
+              Guided by its focus on freshness, purity and nutritional value, MK Dairy Farms seeks to contribute to healthier lifestyles and to support the agricultural and natural resource economy.
             </p>
           </div>
         </div>

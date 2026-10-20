@@ -24,7 +24,7 @@ Mr. Ramachandran serves as an Advisory Board member for various SEBI-registered 
     },
     {
       name: 'Chetan Bharkhada',
-      role: 'Director - Wealth Management & Treasury Expert',
+      role: 'Director - Treasury & Risk Management',
       image: '/team/chetan.jpeg',
       shortBio: 'A seasoned financial services professional with over 30 years of experience in consultancy, treasury management, risk management, and international business across Capital Markets, Commodities, and Treasury Operations.',
       fullBio: `With over 30 years of extensive experience in consultancy, treasury management, risk management strategies (including hedging), and international business, Chetan Bharkhada is a seasoned financial services professional with a proven track record across Capital Markets, Commodities, Treasury Operations, and Strategic Financial Management.
@@ -37,7 +37,7 @@ Key Achievements:
 
 Core Expertise: Designing and implementing business strategies, leading business development initiatives, overseeing profit and loss management, and developing and mentoring leadership teams.
 
-A recognized thought leader and a prominent speaker at national and international forums on Commodities and Forex markets, Chetan combines deep industry knowledge with practical expertise to deliver results-driven financial solutions.
+A recognized thought leader and a prominent speaker at national and international forums on Commodities and Forex markets, Chetan combines deep industry knowledge with extensive practical experience.
 
 Qualifications: Certified Treasury Manager (ACTM - India), MBA/PGDBM in Finance, and Diploma in Commodities Market (DICM).`
     },
@@ -128,21 +128,18 @@ His core functional strengths include cybersecurity research, ethical hacking, v
     },
     {
       name: 'Raj Navneeth',
-      role: 'Capital Markets & Wealth Strategy Expert',
+      role: 'Capital Markets & Private Banking Professional',
       image: '/team/raj.jpeg',
-      shortBio: 'An expert in Capital Markets, Wealth Strategy, and Private Banking with a global track record, delivering bespoke wealth management solutions and strategic advisory services.',
-      fullBio: `Raj Navneeth is a seasoned expert in Capital Markets, Wealth Strategy, and Private Banking, with a global track record of excellence. Drawing upon deep insights into asset classes such as private equity, venture capital, hedge funds, real assets, and a wide range of financial products, Raj has successfully served clients across international markets.
+      shortBio: 'A capital markets and private banking professional with an international career spanning private equity, venture capital, real assets, and merchant banking.',
+      fullBio: `Raj Navneeth is a capital markets and private banking professional with an international career. Over the course of his career he has gained deep exposure to asset classes including private equity, venture capital, hedge funds, and real assets, and has worked across international markets.
 
-He delivers bespoke wealth management solutions to affluent individuals, family offices, and institutions, leveraging extensive experience in navigating the complexities of high-net-worth wealth management. Raj specializes in asset allocation, risk management, and long-term financial planning with a global perspective.
+In his previous roles, he worked with affluent individuals, family offices, and institutions, building expertise in asset allocation, risk management, and long-term planning from a global perspective. His experience also extends to merchant banking, including private equity placements, corporate transactions, and value creation strategies for businesses operating in diverse economies.
 
-Furthermore, he offers strategic advisory services in merchant banking, encompassing private equity placements, corporate advisory, and value creation strategies for businesses operating in diverse economies.
+Career Highlights:
+- Repeatedly recognised in the Prestigious League of Extraordinaire at Yes Bank.
+- Contributed to multiple cross-border transactions and strategic partnerships.
 
-Notable Achievements:
-- Successfully managed over $60 million in assets under advisory, delivering innovative solutions that consistently outperformed market benchmarks.
-- Repeatedly recognized in the Prestigious League of Extraordinaire at Yes Bank.
-- Spearheaded multiple cross-border transactions and strategic partnerships, enhancing global client portfolios and driving sustainable growth and revenue.
-
-Known for building trusted relationships and delivering client-centric strategies with a focus on discretion, integrity, and long-term value creation.
+He is known for building trusted relationships, with a consistent focus on discretion, integrity, and long-term value creation.
 
 Academic Credentials: BBA, MBA, MS in International Business (HULT, USA), MS in International Marketing (HULT, USA).`
     },
@@ -150,16 +147,16 @@ Academic Credentials: BBA, MBA, MS in International Business (HULT, USA), MS in 
       name: 'Ambika Aranganathan',
       role: 'Director - Gazillion Capital Pvt Ltd',
       image: '/team/ambika.jpeg',
-      shortBio: 'A finance and technology expert with 5 years of specialized experience in capital markets, trading strategies, and portfolio management, spearheading initiatives at Gazillion Capital Pvt Ltd.',
-      fullBio: `Ambika Aranganathan is a finance and technology expert with 5 years of specialized experience in capital markets, trading strategies, and portfolio management. As Director of Gazillion Capital Pvt Ltd, she spearheads the firm's initiatives in equity, derivatives, and commodity trading, Portfolio Management Services, delivering innovative, data-driven investment solutions tailored for institutional and high-net-worth clients.
+      shortBio: 'A finance and technology professional with five years of experience in capital markets, algorithmic trading systems, and risk management, serving as a Director of Gazillion Capital Pvt Ltd.',
+      fullBio: `Ambika Aranganathan is a finance and technology professional with five years of experience in capital markets, algorithmic trading systems, and risk management. She serves as a Director of Gazillion Capital Pvt Ltd.
 
-Expertise & Skills: Strong foundation in engineering and analytical skills, integration of algorithmic trading systems with market research to optimize risk-adjusted returns, and navigating complex regulatory environments with compliance and business growth focus.
+Expertise & Skills: A strong foundation in engineering and analytics, applied to the development of algorithmic trading systems, risk management frameworks, and regulatory compliance.
 
-Leadership & Management: Leading innovation, transparency, and sustainable growth within the firm. Managing day-to-day trading operations, guiding product development in algorithmic trading strategies, overseeing risk management frameworks, and championing continuous learning and mentorship within teams.
+Leadership & Management: Leading innovation, transparency, and sustainable growth within the company, overseeing operations and risk management frameworks, and championing continuous learning and mentorship within teams.
 
-Industry Representation: Representing Gazillion Capital at industry forums, advocating thought leadership and collaboration in the capital markets ecosystem, and providing strategic insights to anticipate market trends.
+Industry Representation: Representing Gazillion Capital at industry forums and contributing to thought leadership and collaboration within the capital markets ecosystem.
 
-Education & Certifications: B.Tech - Electronics and Communication Engineering. NISM Certifications: Series V-A (Mutual Fund Distributors), Series VIII (Equity Derivatives), Series XVI (Commodity Derivatives), Series XXI-A (Portfolio Management Services), Series VII (Securities Operations and Risk Management). CMA certified.`
+Education & Certifications: B.Tech - Electronics and Communication Engineering. NISM Certifications: Series V-A, Series VIII, Series XVI, Series XXI-A, and Series VII. CMA certified.`
     },
     {
       name: 'Nithyasri Balakrishnan',
@@ -234,7 +231,7 @@ Mrs. Hemalatha Karthikeyan is recognized for her commitment to excellence, adapt
             transition={{ delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-4 mb-6"
           >
-            Meet the Minds Behind Your Success
+            The Leadership of Alfa Global Group
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 30 }} 
@@ -242,7 +239,7 @@ Mrs. Hemalatha Karthikeyan is recognized for her commitment to excellence, adapt
             transition={{ delay: 0.2 }}
             className="text-white/70 text-lg max-w-2xl mx-auto text-justify"
           >
-            Our leadership team brings decades of combined experience in wealth management, investment advisory, cybersecurity, maritime operations, and strategic consulting to help you achieve your goals.
+            The Group’s leadership brings decades of combined experience across capital markets, maritime operations, cyber security, law, and enterprise building, providing the stewardship that guides each of its enterprises.
           </motion.p>
         </div>
       </section>
@@ -346,17 +343,17 @@ Mrs. Hemalatha Karthikeyan is recognized for her commitment to excellence, adapt
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-justify">
-              At Alfa Global Group, our values guide every decision we make. We are committed to excellence, integrity, and creating lasting value for our partners.
+              The values of Alfa Global Group inform every decision it takes. The Group remains committed to excellence, integrity, and the creation of lasting value for its enterprises and partners.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
-              { title: 'Excellence', desc: 'Highest standards in everything we do' },
+              { title: 'Excellence', desc: 'Uncompromising standards in every endeavour' },
               { title: 'Integrity', desc: 'Transparency and ethical conduct' },
-              { title: 'Innovation', desc: 'Evolving approaches to wealth creation' },
-              { title: 'Partnership', desc: 'Building lasting relationships' },
-              { title: 'Impact', desc: 'Creating positive change' },
-              { title: 'Vision', desc: 'Multi-generational wealth planning' }
+              { title: 'Innovation', desc: 'Continuous evolution in enterprise building' },
+              { title: 'Partnership', desc: 'Enduring relationships built on trust' },
+              { title: 'Impact', desc: 'Meaningful contribution to communities' },
+              { title: 'Vision', desc: 'A multi-generational outlook' }
             ].map((value, i) => (
               <motion.div
                 key={i}
@@ -382,9 +379,9 @@ Mrs. Hemalatha Karthikeyan is recognized for her commitment to excellence, adapt
       {/* CTA Section */}
       <section className={`py-16 bg-gradient-to-r ${t.gradient}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Work With Us?</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Engage with the Group</h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-8 text-justify">
-            Connect with our team of experts and discover how we can help you achieve your financial goals through strategic investments and personalized wealth management solutions.
+            The Group welcomes enquiries from founders, promoters, and strategic partners whose enterprises or projects align with its long-term investment focus.
           </p>
           <Link 
             to="/contact" 

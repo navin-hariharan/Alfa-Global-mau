@@ -54,10 +54,10 @@ const NewsletterSubscription = ({ theme = 'teal' }) => {
             className="text-center lg:text-left"
           >
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
-              Stay Informed with Market Insights
+              Group Updates
             </h2>
             <p className="text-white/80">
-              Subscribe to our newsletter for exclusive updates, market analysis, and investment opportunities.
+              Subscribe to receive corporate announcements and news from across the Group’s enterprises.
             </p>
           </motion.div>
 

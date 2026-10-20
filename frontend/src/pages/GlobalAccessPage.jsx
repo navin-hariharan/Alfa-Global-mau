@@ -7,15 +7,15 @@ const GlobalAccessPage = ({ theme = 'teal' }) => {
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', accentBorder: 'border-teal-200', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', heroAccent: 'text-teal-400' };
 
   const accessAreas = [
-    { title: 'Financial Markets & Wealth Access', company: 'Through Alfa Global Wealth Advisors and Gazillion Capital', items: ['Access to global financial instruments', 'Cross border wealth advisory and planning', 'Entry into exclusive private equity and strategic investments'] },
-    { title: 'Fintech & Trading Platforms', company: 'With Alfa Zillion Traders LLP', items: ['AI driven fintech trading platforms', 'Alpha engineered trading strategies for select global partners', 'Access to emerging markets and high value opportunities'] },
-    { title: 'Global Trade in Agriculture & Resources', company: 'Through MK Dairy Farms Pvt Ltd', items: ['Sustainable agricultural practices aligned with international standards', 'Export ready products for global markets', 'Partnerships that strengthen the global agri trade ecosystem'] },
-    { title: 'Cyber Security Without Borders', company: 'Cyberhakz Pvt Ltd provides', items: ['Enterprise grade cyber security solutions tailored for global operations', 'Compliance with international regulations (GDPR, ISO, HIPAA, etc.)', 'Threat detection and prevention for multinational corporations'] }
+    { title: 'Strategic Holdings and Cross-Border Partnerships', company: 'Through Alfa Star Dynamics', items: ['Joint ventures with international partners', 'Long-term strategic interests in industrial and maritime enterprises', 'Market entry for group enterprises'] },
+    { title: 'Maritime and Logistics', company: 'Through Dhanveir Groups Shipping', items: ['Indian-flagged vessels across key cargo segments', 'Dry bulk transportation of sand, coal, and minerals', 'Partnerships across ports, logistics, and trade routes'] },
+    { title: 'Agriculture and Natural Resources Trade', company: 'Through MK Dairy Farms Pvt Ltd', items: ['Sustainable agricultural practices aligned with international standards', 'Export-ready produce for global markets', 'Partnerships that strengthen the international agricultural trade'] },
+    { title: 'Cyber Security Across Borders', company: 'Through Cyberhakz Pvt Ltd', items: ['Enterprise-grade cyber security for global operations', 'Compliance with international frameworks, including GDPR, ISO, and HIPAA', 'Threat detection and prevention for multinational organisations'] }
   ];
 
   const stats = [
-    { value: '10+', label: 'Presence in 10+ countries with strategic partnerships worldwide' },
-    { value: '30+', label: '30+ years of combined leadership experience across international markets' }
+    { value: '10+', label: 'Engagement across more than ten countries through strategic partnerships' },
+    { value: '30+', label: 'More than three decades of combined leadership experience across international markets' }
   ];
 
   return (
@@ -30,16 +30,16 @@ const GlobalAccessPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Connecting Businesses to Global Opportunities</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Connecting Enterprises to Global Opportunity</h2>
             <p className="text-gray-600 mt-4 max-w-4xl mx-auto leading-relaxed text-justify">
-              At Alfa Global Group of Companies, our strength lies in giving clients seamless access to international markets, investment opportunities, and cross border partnerships. With a strong global footprint, we bridge the gap between local expertise and international scale, enabling our partners to grow beyond boundaries.
+              A defining strength of Alfa Global Group lies in connecting its enterprises with international markets, partners, and cross-border opportunities. Its global footprint bridges local expertise and international scale, enabling the Group and its partners to grow beyond national boundaries.
             </p>
           </motion.div>
 
           <div className={`p-8 rounded-2xl ${t.accentBgLight} mb-12`}>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Global Reach</h3>
             <p className="text-gray-600 leading-relaxed text-justify">
-              We work with clients and partners across Asia, Europe, Middle East, and North America, ensuring they gain access to world class financial products, private equity opportunities, agricultural trade, and cyber security solutions.
+              The Group engages with partners across Asia, Europe, the Middle East, and North America in strategic holdings, maritime, agricultural trade, and cyber security.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
               <img src="https://websitesbytechpioneers.com/alfaglobalnew/image/global-reach-1.png" alt="Global Reach" className="rounded-xl w-full" />
@@ -72,7 +72,7 @@ const GlobalAccessPage = ({ theme = 'teal' }) => {
 
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Why Global Access with Alfa Global?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">The Value of the Group’s Global Reach</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {stats.map((stat, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className={`p-6 rounded-xl border ${t.accentBorder} text-center`}>
@@ -88,7 +88,7 @@ const GlobalAccessPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Our Promise</h2>
           <p className="text-white/80 max-w-3xl mx-auto mb-8">
-            At Alfa Global Group, we go beyond capital to unlock opportunities across industries and borders. Through innovation, disciplined execution, and a global vision, we deliver access, growth, and impact that stand the test of time.
+            Alfa Global Group looks beyond capital to create opportunity across industries and borders. Through innovation, disciplined execution, and a global vision, the Group delivers growth and impact designed to endure.
           </p>
           <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-all">
             Connect With Us <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>

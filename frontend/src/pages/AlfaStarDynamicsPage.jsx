@@ -6,43 +6,43 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', accentHover: 'hover:bg-teal-700' };
 
   const investmentCriteria = [
-    'The business model is validated with visible cash flows',
-    'Scalability is high with minimal execution risk',
-    'The scope for failure is slim to none, supported by sector leadership, governance, or asset backing'
+    'The business model is established and supported by visible cash flows',
+    'The business can scale with execution risk that is well understood and manageable',
+    'The business is supported by sector standing, sound governance or tangible asset backing'
   ];
 
   const capitalDeployment = [
-    'Direct Equity & Growth Capital',
-    'Structured Private Debt',
-    'Hybrid & Mezzanine Instruments'
+    'Direct equity participation',
+    'Shareholder loans and other balance sheet support',
+    'Joint ventures and partnerships with operating partners'
   ];
 
   const capitalMarkets = [
-    'Securities Trading & Asset Rotation',
-    'Derivatives & Structured Financial Products',
-    'Multi Asset Alternative Investment Strategies'
+    'Management of the Company’s own liquidity reserves',
+    'Prudent placement of surplus funds for the Company’s own account',
+    'Management of risk on the Company’s own exposures'
   ];
 
   const maritimeServices = [
-    'Acquisition, Leasing & Chartering of Ships & Marine Assets',
-    'Ship Financing, Freight Forwarding & Crew Management',
-    'Marine Infrastructure Development & Technical Consulting',
-    'Support for Coastal & International Shipping Operations'
+    'Acquisition, leasing and chartering of ships and marine assets',
+    'Freight forwarding and crew management',
+    'Marine infrastructure development and technical consulting',
+    'Coastal and international shipping operations'
   ];
 
   const sectoralExposure = [
     'Infrastructure & Logistics',
     'Real Estate & Land Linked Assets',
     'Emerging Technologies',
-    'Business Consulting & Strategic Development'
+    'Strategic Business Development'
   ];
 
   const whyAlfaStar = [
-    'High conviction investing in proven growth stage businesses',
-    'Minimal downside exposure through disciplined selection',
-    'Capital never sits idle – always working to deliver returns',
-    'Integrated capabilities across private equity, capital markets, and real assets',
-    'Tailored solutions for HNI, UHNI, family offices, and institutional investors'
+    'Long-term ownership of established, revenue-generating businesses',
+    'Disciplined selection and governance-led oversight',
+    'Close partnership with experienced operating management',
+    'Integrated capabilities across maritime, industrial and real-asset sectors',
+    'Investment of the Group’s own capital only, with no external investors'
   ];
 
   return (
@@ -64,7 +64,7 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
           <motion.img initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} src="/logos/alfa-star.png" alt="Alfa Star Dynamics" className="h-20 w-auto mx-auto mb-6" />
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">Alfa Star Dynamics</motion.h1>
-          <p className="text-white/80 text-lg mb-8">Strategic Capital. Integrated Operations. Global Perspective.</p>
+          <p className="text-white/80 text-lg mb-8">Strategic Holdings in Maritime and Industrial Enterprises</p>
           <a 
             href="https://alfastardynamics.com/" 
             target="_blank" 
@@ -86,10 +86,10 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
               <img src="https://websitesbytechpioneers.com/alfaglobalnew/image/strategic-global.png" alt="Strategic Capital" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Strategic Capital & Integrated Operations</span>
+              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Strategic Holdings Arm of Alfa Global Group</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">About Alfa Star Dynamics</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                Alfa Star Dynamics is a diversified enterprise engaged in strategic investing, private equity, and maritime and infrastructure linked operations. The firm blends financial acumen with operational capabilities to deliver high quality, risk calibrated opportunities for HNIs, UHNIs, family offices, and institutional investors.
+                Alfa Star Dynamics is the strategic holdings arm of Alfa Global Group. The Company takes long-term stakes in maritime, infrastructure and industrial businesses alongside experienced operating partners. It invests only the Group’s own capital. It does not raise or manage funds for third parties and does not offer investment opportunities to the public.
               </p>
             </motion.div>
           </div>
@@ -100,17 +100,17 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
       <section className={`py-16 sm:py-24 ${t.accentBgLight}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">High Conviction Private Equity Investments</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Long-Term Strategic Holdings</h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-justify">
-              At the core of Alfa Star Dynamics is a focused private equity platform that specializes in sourcing and executing high conviction investments in growth stage, revenue generating businesses with proven models and strong fundamentals.
+              The Company’s principal activity is acquiring and holding long-term stakes in established, revenue-generating businesses with sound fundamentals. It works alongside each business’s operating partners to strengthen governance, operations and enduring enterprise value.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/de53560c83050cba010874b5494e1a5245d1b1064b954fd59364419c927b1ad0.png" alt="High Conviction Investment" className="rounded-2xl shadow-xl w-full h-[300px] object-cover" />
+              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/de53560c83050cba010874b5494e1a5245d1b1064b954fd59364419c927b1ad0.png" alt="Strategic Holdings" className="rounded-2xl shadow-xl w-full h-[300px] object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
-              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/ee5ecde99a997ab4399d1ada872833783e7723afca53c9aef575ce2a019baabc.png" alt="Investment Strategy" className="rounded-2xl shadow-xl w-full h-[300px] object-cover" />
+              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/ee5ecde99a997ab4399d1ada872833783e7723afca53c9aef575ce2a019baabc.png" alt="Operating Partnerships" className="rounded-2xl shadow-xl w-full h-[300px] object-cover" />
             </motion.div>
           </div>
         </div>
@@ -121,7 +121,7 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">We invest in opportunities where:</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">The Company considers holdings where:</h2>
               <ul className="space-y-4 mb-8">
                 {investmentCriteria.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600">
@@ -132,7 +132,7 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
               </ul>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Capital is strategically deployed via:</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">The Group’s capital is committed through:</h2>
               <ul className="space-y-4 mb-8">
                 {capitalDeployment.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600">
@@ -142,7 +142,7 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
                 ))}
               </ul>
               <p className="text-gray-600 text-justify">
-                This disciplined approach ensures that our partners gain access to upside focused deals with controlled downside exposure.
+                Each commitment is made from the Group’s own resources, after internal due diligence and governance review, with a long-term ownership horizon.
               </p>
             </motion.div>
           </div>
@@ -154,11 +154,11 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Capital Markets & Alternative Strategies</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Treasury & Balance Sheet Management</h2>
               <p className="text-gray-600 mb-6 text-justify">
-                In addition to private equity, Alfa Star Dynamics actively engages in capital markets and structured strategies to enhance portfolio level returns and maximize capital efficiency.
+                As part of managing its own balance sheet, the Company maintains a prudent treasury function covering its own resources only.
               </p>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Our activities include:</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">This function covers:</h3>
               <ul className="space-y-3 mb-6">
                 {capitalMarkets.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600">
@@ -168,11 +168,11 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
                 ))}
               </ul>
               <p className="text-gray-600 text-justify">
-                We operate with the core philosophy that no capital should remain idle. Whether between allocations or within liquidity reserves, every rupee is optimized to generate risk adjusted, tax efficient returns. We deploy dynamic yield, hedge, and tactical positioning strategies to ensure capital is always in motion working, compounding, and creating value.
+                Treasury activities are conducted solely for the Company’s own account to preserve liquidity and support its strategic holdings. The Company does not manage money, provide advice or undertake transactions for any third party.
               </p>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/cd479a8a24bbbcaf5ab57e3a996f8da45175d4fe5668fae72e2715ae78b352f7.png" alt="Capital Markets" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
+              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/cd479a8a24bbbcaf5ab57e3a996f8da45175d4fe5668fae72e2715ae78b352f7.png" alt="Treasury Management" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
             </motion.div>
           </div>
         </div>
@@ -186,9 +186,9 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
               <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/2017e9e6ae808ff9352347f47bfb5f89c1ac250aa043a3ca873df0f23e599579.png" alt="Maritime Services" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Maritime & Marine Services</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Maritime & Marine Holdings</h2>
               <p className="text-gray-600 mb-6 text-justify">
-                Alfa Star Dynamics also maintains a strong and scalable presence in the maritime and marine logistics ecosystem, offering:
+                Through its holdings and operating partnerships, Alfa Star Dynamics is present in the maritime and marine logistics sector across the following activities:
               </p>
               <ul className="space-y-3 mb-6">
                 {maritimeServices.map((item, i) => (
@@ -199,7 +199,7 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
                 ))}
               </ul>
               <p className="text-gray-600 text-justify">
-                These services are delivered through an institutional grade operating model that serves trade, logistics, and infrastructure clients across private and public sectors.
+                These activities are carried out by the relevant operating businesses and their management teams, serving trade, logistics and infrastructure customers in the private and public sectors.
               </p>
             </motion.div>
           </div>
@@ -210,9 +210,9 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
       <section className={`py-16 sm:py-24 ${t.accentBgLight}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Broader Sectoral Exposure & Advisory</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Broader Sectoral Interests</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-justify">
-              We also engage in direct investments and strategic partnerships across:
+              The Company also holds direct interests and strategic partnerships in the following sectors:
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -226,7 +226,7 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
             ))}
           </div>
           <p className="text-gray-600 text-center mt-8 text-justify max-w-3xl mx-auto">
-            This multi sector approach enables us to act as both capital allocator and business enabler, driving long term enterprise value.
+            This multi-sector approach allows the Company to act both as a long-term owner and as a business enabler, supporting enduring enterprise value across the Group.
           </p>
         </div>
       </section>
@@ -247,7 +247,7 @@ const AlfaStarDynamicsPage = ({ theme = 'teal' }) => {
           </div>
           <div className={`p-12 rounded-2xl bg-gradient-to-r ${t.gradient} text-center`}>
             <p className="text-white/90 max-w-4xl mx-auto leading-relaxed text-justify">
-              Alfa Star Dynamics is not just an investment platform – it's a partner in building enduring value. With our blend of strategic insight, operational expertise, and capital agility, we help partners deploy their wealth with purpose, precision, and performance.
+              Alfa Star Dynamics is a long-term owner and partner to the businesses in which it holds stakes. Drawing on strategic insight, operational expertise and the Group’s own capital, the Company aims to build durable enterprises of lasting value.
             </p>
           </div>
         </div>

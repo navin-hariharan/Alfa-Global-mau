@@ -12,7 +12,30 @@ module.exports = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+  		fontFamily: {
+  			sans: ['"Nunito Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+  			display: ['Fredoka', '"Nunito Sans"', 'ui-sans-serif', 'sans-serif']
+  		},
   		colors: {
+  			// Brand palette taken from the Alfa Global logo. "teal" is remapped to the
+  			// logo cyan so every existing teal-* class picks up the brand colour.
+  			teal: {
+  				50: '#e6f9ff',
+  				100: '#c2f0ff',
+  				200: '#8fe4ff',
+  				300: '#4dd6ff',
+  				400: '#00ccff',
+  				500: '#00a8d6',
+  				600: '#007faa',
+  				700: '#006a8e',
+  				800: '#055572',
+  				900: '#08445c',
+  				950: '#052b3b'
+  			},
+  			brandgreen: {
+  				DEFAULT: '#2e7d32',
+  				dark: '#3f5b26'
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
