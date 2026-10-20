@@ -28,37 +28,27 @@ const UltraHome = ({ theme = 'teal' }) => {
     checkColor: 'text-teal-500', glowColor: 'rgba(45, 212, 191, 0.1)'
   };
 
-  // Market indices
-  const marketData = [
-    { name: 'SENSEX', value: '72,568.45', change: '+0.85%', up: true },
-    { name: 'NIFTY 50', value: '22,045.30', change: '+0.72%', up: true },
-    { name: 'GOLD', value: '₹62,450', change: '-0.12%', up: false },
-    { name: 'USD/INR', value: '83.12', change: '+0.05%', up: true }
-  ];
-
-  // Client logos removed as per request
-
   // Services from reference site - exact content
   const services = [
     {
       icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/strategic-partnerships.png',
-      title: 'Strategic Ventures & Holdings',
-      desc: 'Proprietary investments in companies, joint ventures, and scalable businesses across sectors.',
-      features: ['Direct Equity Investments', 'Joint Venture Partnerships', 'Growth Capital', 'Management Buyouts'],
+      title: 'Strategic Holdings',
+      desc: 'Long-term investments of the Group’s own capital in operating companies, joint ventures, and scalable businesses across sectors.',
+      features: ['Strategic & Controlling Stakes', 'Joint Ventures', 'Growth Capital for Group Companies', 'Acquisitions'],
       image: 'https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/0010f7ee9798ab61a3077ea085b3679c300267801248f42b6f4097bbd5676a5d.png'
     },
     {
       icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/project%20(1).png',
       title: 'High-Impact Projects',
-      desc: 'Initiating and funding projects in industries such as finance, infrastructure, shipping, manufacturing, and technology.',
-      features: ['Infrastructure Development', 'Manufacturing Projects', 'Maritime Investments', 'Technology Ventures'],
+      desc: 'Initiating and funding projects in industries such as infrastructure, energy, shipping, manufacturing, and technology.',
+      features: ['Infrastructure Development', 'Manufacturing Projects', 'Shipping & Maritime', 'Technology Ventures'],
       image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800'
     },
     {
       icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/partnership.png',
       title: 'Global Partnerships',
-      desc: 'Cross-border alliances, family office structures, and institutional collaborations.',
-      features: ['Family Office Services', 'Cross-Border M&A', 'Strategic Consulting', 'Institutional Consulting'],
+      desc: 'Cross-border alliances and operating partnerships that bring our businesses to new markets.',
+      features: ['Cross-Border Joint Ventures', 'Strategic Alliances', 'Industry & Operating Partners', 'Market Entry for Group Companies'],
       image: 'https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/bf52fff87a71bbd76ffad7e58336e973072d1215c98810ef58b845f88a84d52c.png'
     }
   ];
@@ -79,11 +69,6 @@ const UltraHome = ({ theme = 'teal' }) => {
     { name: 'Kavita Iyer', role: 'Director - Strategy', image: 'https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/16745fe51d0f23337b47ab67e77139a7aef09c225e8c9caebe7355bce36c5ffa.png' }
   ];
 
-  const insights = [
-    { title: 'Market Outlook 2025', category: 'Research', date: 'Dec 2024', image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400', read: '5 min' },
-    { title: 'Alternative Investments', category: 'Education', date: 'Nov 2024', image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400', read: '8 min' },
-    { title: 'Global Economic Trends', category: 'Analysis', date: 'Oct 2024', image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400', read: '6 min' }
-  ];
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
@@ -91,17 +76,17 @@ const UltraHome = ({ theme = 'teal' }) => {
       <motion.div className={`fixed top-0 left-0 right-0 h-1 ${t.accentBg} origin-left z-[100]`} style={{ scaleX }} />
 
       {/* HERO SECTION - Content from reference site */}
-      <section ref={heroRef} className={`relative min-h-screen flex items-center bg-gradient-to-br ${t.heroBg} overflow-hidden`}>
-        {/* Background */}
+      <section ref={heroRef} className="relative min-h-screen flex items-center bg-gradient-to-br from-white via-sky-50 to-emerald-50 overflow-hidden">
+        {/* Background: soft brand-cyan and brand-green glows that sit well behind the logo */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-0 left-0 w-[800px] h-[800px] rounded-full" style={{ background: `radial-gradient(circle, ${t.glowColor} 0%, transparent 70%)`, transform: 'translate(-30%, -30%)' }} />
-            <div className="absolute bottom-0 right-0 w-[600px] h-[600px] rounded-full" style={{ background: `radial-gradient(circle, ${t.glowColor} 0%, transparent 70%)`, transform: 'translate(30%, 30%)' }} />
+          <div className="absolute inset-0">
+            <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full" style={{ background: 'radial-gradient(circle, rgba(0,204,255,0.14) 0%, transparent 70%)', transform: 'translate(30%, -30%)' }} />
+            <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full" style={{ background: 'radial-gradient(circle, rgba(46,125,50,0.10) 0%, transparent 70%)', transform: 'translate(-30%, 30%)' }} />
           </div>
-          <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
-          <svg className="absolute inset-0 w-full h-full opacity-[0.03]">
+          <div className="absolute inset-0 opacity-[0.5]" style={{ backgroundImage: 'linear-gradient(rgba(0,127,170,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,127,170,0.05) 1px, transparent 1px)', backgroundSize: '60px 60px' }} />
+          <svg className="absolute inset-0 w-full h-full opacity-[0.04]">
             <pattern id="diagonalLines" width="40" height="40" patternUnits="userSpaceOnUse">
-              <line x1="0" y1="40" x2="40" y2="0" stroke="white" strokeWidth="0.5" />
+              <line x1="0" y1="40" x2="40" y2="0" stroke="#007faa" strokeWidth="0.5" />
             </pattern>
             <rect width="100%" height="100%" fill="url(#diagonalLines)" />
           </svg>
@@ -113,7 +98,7 @@ const UltraHome = ({ theme = 'teal' }) => {
               <div>
                 {/* Logo from reference */}
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-4 mb-6">
-                  <img src="/alfa-hero-logo.png" alt="Alfa Global" className="h-20 sm:h-24 w-auto" />
+                  <img src={`${process.env.PUBLIC_URL}/alfa-logo.png`} alt="Alfa Global" className="h-14 sm:h-20 w-auto" />
                 </motion.div>
 
                 {/* Main Headline - from reference */}
@@ -121,11 +106,11 @@ const UltraHome = ({ theme = 'teal' }) => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6"
+                  className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.1] mb-6"
                 >
                   Beyond Capital.
                   <br />
-                  <span className={t.heroAccent}>Building Futures.</span>
+                  <span className="text-teal-600">Building Futures.</span>
                 </motion.h1>
 
                 {/* Description - exact from reference */}
@@ -133,10 +118,10 @@ const UltraHome = ({ theme = 'teal' }) => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="text-lg sm:text-xl text-white/60 mb-10 max-w-xl leading-relaxed"
+                  className="text-lg sm:text-xl text-slate-600 mb-10 max-w-xl leading-relaxed"
                 >
-                  Alfa Global Group is a diversified global organization committed to creating enduring value across industries and generations. 
-                  We invest in transformative ideas, strategic ventures, and high impact projects that shape the future of capital, business, and society.
+                  Alfa Global Group is a strategic investment and holding company. We invest our own capital to build, acquire, and grow
+                  businesses and high impact projects across shipping, agriculture, technology, and infrastructure, partnering with founders and operators for the long term.
                 </motion.p>
 
                 {/* CTA */}
@@ -147,10 +132,10 @@ const UltraHome = ({ theme = 'teal' }) => {
                   className="flex flex-wrap gap-4 mb-10"
                 >
                   <Link to="/contact" className={`px-8 py-4 ${t.accentBg} ${t.accentHover} text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl`}>
-                    Explore Our World
+                    Partner With Us
                   </Link>
-                  <Link to="/services" className="px-8 py-4 bg-white/5 border border-white/10 text-white font-semibold rounded-lg hover:bg-white/10 transition-all backdrop-blur-sm">
-                    Our Services
+                  <Link to="/strategy" className="px-8 py-4 bg-white border border-slate-200 text-slate-800 font-semibold rounded-lg hover:border-teal-300 hover:text-teal-700 transition-all">
+                    Our Approach
                   </Link>
                 </motion.div>
               </div>
@@ -160,28 +145,12 @@ const UltraHome = ({ theme = 'teal' }) => {
 
         {/* Scroll Indicator */}
         <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }} className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
-          <div className="flex flex-col items-center text-white/30">
+          <div className="flex flex-col items-center text-slate-400">
             <span className="text-xs tracking-widest uppercase mb-2">Scroll</span>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" /></svg>
           </div>
         </motion.div>
       </section>
-
-      {/* LIVE MARKET TICKER */}
-      <div className="bg-slate-900 border-y border-white/5 overflow-hidden">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-3">
-          <div className="flex items-center gap-8 overflow-x-auto scrollbar-hide">
-            <span className="text-white/40 text-xs uppercase tracking-wider shrink-0">Live Markets</span>
-            {marketData.map((item, i) => (
-              <div key={i} className="flex items-center gap-3 shrink-0">
-                <span className="text-white/70 text-sm font-medium">{item.name}</span>
-                <span className="text-white text-sm">{item.value}</span>
-                <span className={`text-xs ${item.up ? 'text-green-400' : 'text-red-400'}`}>{item.change}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* ABOUT SECTION - Content from reference */}
       <section className="py-16 sm:py-24 bg-white">
@@ -191,16 +160,16 @@ const UltraHome = ({ theme = 'teal' }) => {
               <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Group Overview</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">Who We Are</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                Alfa Global Group is a diversified global organization driven by vision, innovation, and impact. We invest in ideas, businesses, 
-                and projects that shape industries, empower legacies, and create sustainable value across generations. Our strength lies in combining 
-                capital markets expertise with entrepreneurial execution to build opportunities that go beyond conventional boundaries.
+                Alfa Global Group is a diversified strategic investment and holding company driven by vision, innovation, and impact. We commit
+                our own capital to businesses and projects that shape industries and create sustainable value across generations. Our strength lies in
+                combining patient, long-term ownership with entrepreneurial execution, so that every business we back gains more than capital.
               </p>
               <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Our Purpose</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">Why We Exist</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                We believe wealth is not just financial capital, it is the ability to create, transform, and leave behind something meaningful. 
-                Alfa Global Group exists to channel resources, knowledge, and strategy into ventures that redefine growth, spark innovation, 
-                and contribute to a better future for our clients, partners, and communities.
+                We believe capital is most valuable when it builds something real. Alfa Global Group exists to channel resources, knowledge,
+                and strategy into ventures that redefine growth, spark innovation, and contribute to a better future for our businesses,
+                partners, and communities.
               </p>
               <Link to="/about" className={`inline-flex items-center gap-2 ${t.accentText} font-semibold hover:gap-3 transition-all`}>
                 Learn More <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
@@ -208,7 +177,7 @@ const UltraHome = ({ theme = 'teal' }) => {
             </motion.div>
             
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/20327903923c4ebb76f605080941a3f9bafcd9f5abd68bc14b148bbf168c8646.png" alt="Financial Advisory" className="rounded-2xl shadow-2xl w-full" />
+              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/20327903923c4ebb76f605080941a3f9bafcd9f5abd68bc14b148bbf168c8646.png" alt="Alfa Global Group leadership" className="rounded-2xl shadow-2xl w-full" />
             </motion.div>
           </div>
         </div>
@@ -219,7 +188,7 @@ const UltraHome = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>What We Do</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3">Our Services</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3">Where We Invest</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -260,7 +229,7 @@ const UltraHome = ({ theme = 'teal' }) => {
                     </li>
                   ))}
                 </ul>
-                <Link to="/services" className={`inline-flex items-center gap-2 px-6 py-3 ${t.accentBg} text-white rounded-lg font-medium ${t.accentHover} transition-all`}>Learn More</Link>
+                <Link to="/strategy" className={`inline-flex items-center gap-2 px-6 py-3 ${t.accentBg} text-white rounded-lg font-medium ${t.accentHover} transition-all`}>Learn More</Link>
               </div>
             </motion.div>
           </div>
@@ -276,10 +245,10 @@ const UltraHome = ({ theme = 'teal' }) => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>, title: 'Capital', desc: 'We allocate across asset classes, industries, and strategies with disciplined frameworks designed for long-term compounding and multi-cycle performance.' },
-              { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>, title: 'Intelligence', desc: 'Every decision is powered by proprietary research, macro insight, quantitative analysis, and cross-asset intelligence to identify opportunities others overlook.' },
-              { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>, title: 'Opportunities', desc: 'We originate, invest in, and scale high-potential ventures, technologies, and strategic situations where asymmetric upside exists.' },
-              { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>, title: 'Execution', desc: 'Our infrastructure, partnerships, and global network enable decisive action, efficient deployment, and access to institutional-grade opportunities.' }
+              { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>, title: 'Capital', desc: 'We invest our own capital with a long horizon, so our decisions follow business fundamentals rather than short-term market movements.' },
+              { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>, title: 'Insight', desc: 'Deep sector knowledge and hands-on operating experience help us recognise businesses and projects with durable potential.' },
+              { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>, title: 'Opportunities', desc: 'We originate, build, and scale ventures in sectors where the Group already has operating strength and lasting relationships.' },
+              { icon: <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>, title: 'Execution', desc: 'Our people, group companies, and global network let us act decisively and add value well beyond capital.' }
             ].map((item, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="p-8 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all">
                 <div className={`${t.heroAccent} mb-4`}>{item.icon}</div>
@@ -310,40 +279,13 @@ const UltraHome = ({ theme = 'teal' }) => {
         </div>
       </section>
 
-      {/* INSIGHTS */}
-      <section className="py-16 sm:py-24 bg-white">
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-12">
-            <div>
-              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Insights</span>
-              <h2 className="text-3xl font-bold text-gray-900 mt-3">Latest Research</h2>
-            </div>
-            <Link to="/insights" className={`${t.accentText} font-semibold hover:underline flex items-center gap-2`}>View All <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg></Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {insights.map((item, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className={`rounded-xl overflow-hidden border ${t.accentBorder} group hover:shadow-lg transition-all`}>
-                <div className="aspect-video overflow-hidden"><img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" /></div>
-                <div className="p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className={`text-xs ${t.accentText} uppercase font-semibold`}>{item.category}</span>
-                    <span className="text-gray-400 text-xs">• {item.read}</span>
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className={`p-12 md:p-16 rounded-2xl bg-gradient-to-r ${t.gradient}`}>
             <div className="text-center max-w-2xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Let's Talk About Your Next Project</h2>
-              <p className="text-white/80 mb-8">Contact us today to schedule a consultation. We look forward to understanding your financial aspirations.</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Let’s Build Something Together</h2>
+              <p className="text-white/80 mb-8">Whether you are a founder, an operator, or a prospective strategic partner, we would like to hear about your business or project.</p>
               <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-all">
                 Get in Touch <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </Link>

@@ -54,10 +54,10 @@ const NewsletterSubscription = ({ theme = 'teal' }) => {
             className="text-center lg:text-left"
           >
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
-              Stay Informed with Market Insights
+              Stay Connected with Alfa Global
             </h2>
             <p className="text-white/80">
-              Subscribe to our newsletter for exclusive updates, market analysis, and investment opportunities.
+              Subscribe for Group news, company announcements, and updates from our ventures.
             </p>
           </motion.div>
 

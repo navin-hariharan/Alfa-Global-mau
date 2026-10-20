@@ -7,23 +7,23 @@ const StrategyPage = ({ theme = 'teal' }) => {
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', accentBorder: 'border-teal-200', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', heroAccent: 'text-teal-400' };
 
   const pillars = [
-    { num: '1', title: 'Diversification for Stability', desc: 'We maintain a balanced and diversified portfolio across industries to reduce risk and unlock opportunity. From financial markets and private equity to sustainable agriculture, infrastructure, and cybersecurity, diversification fuels resilience and consistent performance.' },
-    { num: '2', title: 'Opportunity-Centric Solutions', desc: 'Our strategy is built on identifying and anticipating opportunities. Whether for family offices, enterprises, or institutions, we design solutions that deliver measurable outcomes and lasting value.' },
-    { num: '3', title: 'Innovation & Technology', desc: 'We harness fintech platforms, AI powered trading models, and advanced digital tools to stay ahead of evolving markets. Innovation powers efficiency, transparency, and smarter decision-making across all our ventures.' },
-    { num: '4', title: 'Global Expansion with Local Impact', desc: 'Our presence spans domestic and international markets, but our focus remains on creating meaningful local impact. We invest in industries that strengthen communities while generating sustainable global returns.' },
+    { num: '1', title: 'Diversification for Stability', desc: 'We hold a balanced mix of businesses across industries to reduce concentration risk and unlock opportunity. From strategic holdings and shipping to sustainable agriculture, infrastructure, and cybersecurity, diversification makes the Group resilient.' },
+    { num: '2', title: 'Opportunity-Centric Solutions', desc: 'Our strategy is built on identifying and anticipating opportunities early, and backing businesses and projects where the Group can add capital, expertise, and partnerships.' },
+    { num: '3', title: 'Innovation & Technology', desc: 'We harness technology platforms, data, and advanced digital tools across our businesses. Innovation powers efficiency, transparency, and smarter decision-making across all our ventures.' },
+    { num: '4', title: 'Global Expansion with Local Impact', desc: 'Our presence spans domestic and international markets, but our focus remains on creating meaningful local impact. We invest in industries that strengthen communities while building sustainable long-term value.' },
     { num: '5', title: 'Responsibility & Governance', desc: 'We embrace responsible investing and governance as non negotiable. From sustainable projects in agriculture to compliance driven solutions in technology, we align business growth with environmental and social responsibility.' }
   ];
 
   const execution = [
-    { title: 'Data Driven Decisions', desc: 'Advanced research and analytics guide risk management and opportunity selection.' },
-    { title: 'Strategic Partnerships', desc: 'Collaborating with global stakeholders, investors, and industry leaders.' },
+    { title: 'Data Driven Decisions', desc: 'Careful analysis and due diligence guide risk management and opportunity selection.' },
+    { title: 'Strategic Partnerships', desc: 'Collaborating with founders, operators, and industry leaders worldwide.' },
     { title: 'Scalable Models', desc: 'Ventures designed to grow with evolving opportunities and markets.' },
     { title: 'Performance Monitoring', desc: 'Regular reviews ensure consistent delivery, compliance, and alignment with long term goals.' }
   ];
 
   const stats = [
     { value: '30+', label: 'Years of combined leadership experience' },
-    { value: 'Proven', label: 'Track record in investments and multi-sector growth' }
+    { value: 'Proven', label: 'Track record in building and growing multi-sector businesses' }
   ];
 
   return (
@@ -40,7 +40,7 @@ const StrategyPage = ({ theme = 'teal' }) => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Our Strategic Approach</h2>
             <p className="text-gray-600 mt-4 max-w-4xl mx-auto leading-relaxed text-justify">
-              At Alfa Global Group, strategy drives everything we do. Our portfolio spans alternative investments, private equity, fintech trading, infrastructure, shipping, manufacturing, agriculture, and cybersecurity – yet all businesses are guided by a unified approach: combining innovation, disciplined risk management, and long term vision to deliver sustainable growth and impact.
+              At Alfa Global Group, strategy drives everything we do. Our businesses span strategic holdings, technology, infrastructure, shipping, manufacturing, agriculture, and cybersecurity – yet all businesses are guided by a unified approach: combining innovation, disciplined risk management, and long term vision to deliver sustainable growth and impact.
             </p>
           </motion.div>
         </div>

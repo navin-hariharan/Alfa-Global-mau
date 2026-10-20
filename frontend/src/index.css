@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Headings use a rounded geometric face that echoes the "alfa global" wordmark */
+h1, h2, h3, .font-display {
+  font-family: 'Fredoka', 'Nunito Sans', ui-sans-serif, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+body {
+  font-family: 'Nunito Sans', ui-sans-serif, system-ui, sans-serif;
+  color: #0f2a3d;
+}
+
 /* Global justified text for all paragraphs */
 p {
   text-align: justify;
@@ -152,7 +163,7 @@ html {
 
 /* Selection */
 ::selection {
-  background-color: #4a5568;
+  background-color: #007faa;
   color: white;
 }
 

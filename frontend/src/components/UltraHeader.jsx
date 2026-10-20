@@ -79,7 +79,7 @@ const UltraHeader = ({ theme = 'teal' }) => {
             {/* Logo */}
             <Link to="/" className="flex items-center group">
               <img 
-                src="https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-global-logo-removebg-preview.png" 
+                src={`${process.env.PUBLIC_URL}/alfa-logo.png`} 
                 alt="Alfa Global Group" 
                 className="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105" 
               />

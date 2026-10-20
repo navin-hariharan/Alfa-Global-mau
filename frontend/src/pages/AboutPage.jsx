@@ -7,10 +7,10 @@ const AboutPage = ({ theme = 'teal' }) => {
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', accentBorder: 'border-teal-200', accentHover: 'hover:bg-teal-700', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', heroAccent: 'text-teal-400' };
 
   const companies = [
-    { name: 'Alfa Global Wealth Advisors', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-global-logo-removebg-preview.png', desc: 'Your trusted partner in comprehensive wealth management and financial advisory. We specialize in portfolio management, investment planning, and financial solutions for HNIs and institutions seeking long-term security and growth.', link: '/alfa-global-wealth-advisors' },
-    { name: 'Alfa Star Dynamics', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-star-logo-removebg-preview.png', desc: 'Focused on strategic capital and private equity, Alfa Star Dynamics drives investments across global maritime and industrial sectors, offering tailor made opportunities for high value investors and institutions.', link: '/alfa-star-dynamics' },
-    { name: 'Alfa Zillion Traders', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-zillion-logo-removebg-preview.png', desc: 'A cutting-edge fintech firm delivering AI powered trading solutions and alpha-engineering for exclusive partners. Our proprietary models and platforms redefine how trading and investments are executed.', link: '/alfa-zillion-traders' },
-    { name: 'Gazillion Capital', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/gazillon-logo-removebg-preview.png', desc: 'Innovating the future of wealth through distribution, broking, and investor education. Gazillion Capital is committed to creating access to next gen financial products that empower investors to make informed decisions.', link: '/gazillion-capital' },
+    { name: 'Alfa Global Wealth Advisors', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-global-logo-removebg-preview.png', desc: 'The Group’s family office platform, responsible for stewarding and allocating the Group’s own capital across its businesses and strategic holdings.', link: '/alfa-global-wealth-advisors' },
+    { name: 'Alfa Star Dynamics', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-star-logo-removebg-preview.png', desc: 'The Group’s strategic holdings arm, taking long-term stakes in maritime and industrial businesses alongside operating and industry partners.', link: '/alfa-star-dynamics' },
+    { name: 'Alfa Zillion Traders', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-zillion-logo-removebg-preview.png', desc: 'A technology-led firm that builds in-house fintech platforms and quantitative tools, and trades solely on its own account.', link: '/alfa-zillion-traders' },
+    { name: 'Gazillion Capital', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/gazillon-logo-removebg-preview.png', desc: 'A separately operated group company in financial services. Details of its activities and any regulatory registrations are set out on its own page.', link: '/gazillion-capital' },
     { name: 'MK Dairy Farms', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/mk-logo-png.png', desc: 'A pioneer in agriculture and natural resources distribution. With a focus on innovation and sustainability, MK Dairy Farms connects quality produce with markets while supporting rural economies.', link: '/mk-dairy-farms' },
     { name: 'Cyberhakz', logo: 'https://websitesbytechpioneers.com/alfaglobalnew/image/cyberhakz-logo-removebg-preview.png', desc: 'Delivering enterprise grade cyber security solutions to safeguard businesses against evolving digital threats. From infrastructure security to compliance, Cyberhakz ensures organizations remain secure in a connected world.', link: '/cyberhakz' },
     { name: 'Dhanveir Groups Shipping', logo: '/logos/dhanveir.png', logoBg: false, desc: 'The Group\'s strategic maritime platform, established to build, own, and operate Indian-flagged vessels across key cargo segments including dry bulk transportation of sand, coal, and minerals.', link: '/dhanveir-groups-shipping' }
@@ -18,9 +18,9 @@ const AboutPage = ({ theme = 'teal' }) => {
 
   const whyChoose = [
     { title: 'Diversified Portfolio', desc: 'Strong presence across finance, technology, agriculture, and security' },
-    { title: 'Trusted Expertise', desc: 'Experienced leadership and a global client network' },
+    { title: 'Trusted Expertise', desc: 'Experienced leadership and a global partner network' },
     { title: 'Innovation Driven', desc: 'Leveraging fintech, cyber tech, and sustainable practices' },
-    { title: 'Client Centric Approach', desc: 'Tailored solutions for HNIs, institutions, and enterprises' }
+    { title: 'Long-Term Ownership', desc: 'Patient capital and an owner’s mindset in every business we back' }
   ];
 
   return (
@@ -46,10 +46,10 @@ const AboutPage = ({ theme = 'teal' }) => {
               <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>About Us</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">Who We Are</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                Alfa Global Group is a global investment and ventures platform built on a vision of global transformation, innovation, and lasting impact. We invest in transformative ideas, strategic ventures, and high impact projects that shape industries and create sustainable value across generations.
+                Alfa Global Group is a strategic investment and holding company built on a vision of global transformation, innovation, and lasting impact. We invest our own capital in transformative ideas, strategic ventures, and high impact projects that shape industries and create sustainable value across generations.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                From pioneering funds and strategic holdings to projects in finance, infrastructure, shipping, manufacturing, and technology, our work reflects a commitment to building legacies that go beyond capital.
+                From strategic holdings and joint ventures to projects in infrastructure, shipping, manufacturing, agriculture, and technology, our work reflects a commitment to building legacies that go beyond capital.
               </p>
               <p className="text-gray-600 leading-relaxed text-justify">
                 We believe success lies in more than financial outcomes, it is measured in the ability to spark innovation, empower communities, and leave behind a lasting legacy. By combining global intelligence with disciplined execution, Alfa Global Group continues to transform bold ideas into ventures that define the future of capital, business, and society.
@@ -74,7 +74,7 @@ const AboutPage = ({ theme = 'teal' }) => {
               <img src="https://websitesbytechpioneers.com/alfaglobalnew/image/targeting.png" alt="Mission" className="w-16 h-16 mb-4" />
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600 leading-relaxed text-justify">
-                Our mission is to invest in transformative ideas, strategic ventures, and high impact projects that drive innovation and growth across industries. By combining global intelligence, disciplined execution, and integrity, Alfa Global Group empowers clients, partners, and communities to build opportunities, legacies, and futures that last.
+                Our mission is to invest the Group’s own capital in transformative ideas, strategic ventures, and high impact projects that drive innovation and growth across industries. By combining global intelligence, disciplined execution, and integrity, Alfa Global Group works with its businesses, partners, and communities to build opportunities, legacies, and futures that last.
               </p>
             </motion.div>
           </div>

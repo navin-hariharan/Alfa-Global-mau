@@ -36,9 +36,9 @@ const UltraFooter = ({ theme = 'teal' }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <img src="https://websitesbytechpioneers.com/alfaglobalnew/image/alfa-global-logo-removebg-preview.png" alt="Alfa Global Group" className="h-12 w-auto mb-4" />
+            <div className="inline-block bg-white rounded-lg px-3 py-2 mb-4"><img src={`${process.env.PUBLIC_URL}/alfa-logo.png`} alt="Alfa Global Group" className="h-9 w-auto" /></div>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-              A diversified global organization driven by vision, innovation, and impact. Building wealth and creating legacies across generations.
+              A strategic investment and holding company building enduring businesses and legacies across generations.
             </p>
             <div className="flex gap-3">
               {['linkedin', 'twitter', 'facebook'].map((social) => (
@@ -117,6 +117,18 @@ const UltraFooter = ({ theme = 'teal' }) => {
               <p className={`${t.accent} text-sm mt-1`}>contact@alfaglobalwealth.com</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Disclaimer */}
+      <div className="border-t border-gray-800">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-6">
+          <p className="text-gray-500 text-xs leading-relaxed">
+            Alfa Global Group invests only its own capital. It does not provide investment advice, portfolio management, research
+            recommendations, or broking services, and does not accept money from the public for investment. Nothing on this website is an
+            offer, solicitation, or recommendation to buy or sell any security or financial product. Group companies that carry on any
+            regulated activity do so separately, under their own registrations where applicable.
+          </p>
         </div>
       </div>
 

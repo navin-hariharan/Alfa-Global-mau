@@ -40,7 +40,7 @@ const PremiumContact = ({ theme = 'teal' }) => {
   };
 
   const companyTypes = ['Company', 'Family Office', 'Individual'];
-  const areasOfInterest = ['Wealth Advisory', 'Private Equity/Capital', 'Trading/Fintech', 'Cybersecurity', 'Agri/Natural Resources', 'Other'];
+  const areasOfInterest = ['Strategic Partnership/Joint Venture', 'Business or Project Proposal', 'Shipping & Maritime', 'Cybersecurity', 'Agri/Natural Resources', 'Other'];
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -79,7 +79,7 @@ const PremiumContact = ({ theme = 'teal' }) => {
           >
             <span className={`${t.accentText} text-sm tracking-[0.2em] uppercase`}>Get in Touch</span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-2 mb-4">Contact Us</h1>
-            <p className="text-white/60">Ready to start your wealth journey? Our team of experts is here to help.</p>
+            <p className="text-white/60">Have a business, project, or partnership in mind? We’d like to hear from you.</p>
           </motion.div>
         </div>
       </section>
@@ -135,17 +135,17 @@ const PremiumContact = ({ theme = 'teal' }) => {
                     />
                   </div>
                   <div>
-                    <label className="text-white/70 text-sm mb-2 block">Service Interest</label>
+                    <label className="text-white/70 text-sm mb-2 block">Topic</label>
                     <select
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white focus:outline-none focus:border-purple-500 transition-colors"
                     >
-                      <option value="" className="bg-gray-900">Select a service</option>
-                      <option value="wealth" className="bg-gray-900">Wealth Management</option>
-                      <option value="advisory" className="bg-gray-900">Investment Advisory</option>
-                      <option value="family" className="bg-gray-900">Family Office</option>
-                      <option value="portfolio" className="bg-gray-900">Portfolio Management</option>
+                      <option value="" className="bg-gray-900">Select a topic</option>
+                      <option value="partnership" className="bg-gray-900">Strategic Partnership / Joint Venture</option>
+                      <option value="proposal" className="bg-gray-900">Business or Project Proposal</option>
+                      <option value="group-company" className="bg-gray-900">Group Company Enquiry</option>
+                      <option value="careers" className="bg-gray-900">Careers</option>
                       <option value="other" className="bg-gray-900">Other</option>
                     </select>
                   </div>
