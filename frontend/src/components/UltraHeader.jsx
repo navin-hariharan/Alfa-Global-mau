@@ -81,7 +81,7 @@ const UltraHeader = ({ theme = 'teal' }) => {
               <img 
                 src={`${process.env.PUBLIC_URL}/alfa-logo.png`} 
                 alt="Alfa Global Group" 
-                className="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105" 
+                className="h-11 sm:h-14 w-auto transition-transform group-hover:scale-105" 
               />
             </Link>
 

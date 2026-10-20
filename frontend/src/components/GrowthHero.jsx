@@ -29,7 +29,7 @@ const GrowthLine = ({ className = '' }) => {
     <svg viewBox="0 0 1200 500" className={className} role="img" aria-label="A rising growth line passing through agriculture, maritime, infrastructure and technology">
       <defs>
         <pattern id="heroDots" width="18" height="18" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.6" fill="#00ccff" opacity="0.35" />
+          <circle cx="2" cy="2" r="1.6" fill="#0284c7" opacity="0.28" />
         </pattern>
         <radialGradient id="heroDotsFade" cx="65%" cy="55%" r="60%">
           <stop offset="0%" stopColor="#fff" stopOpacity="1" />
@@ -43,14 +43,14 @@ const GrowthLine = ({ className = '' }) => {
       <rect width="1200" height="500" fill="url(#heroDots)" mask="url(#heroDotsMask)" />
 
       {/* Depth shadow, as on the logo arrow */}
-      <motion.path d={SHADOW} fill="none" stroke="#3f5b26" strokeWidth="16" strokeLinejoin="round" strokeLinecap="round" {...draw} />
-      <motion.path d={PATH} fill="none" stroke="#2e7d32" strokeWidth="16" strokeLinejoin="round" strokeLinecap="round" {...draw} />
+      <motion.path d={SHADOW} fill="none" stroke="#2b4019" strokeWidth="16" strokeLinejoin="round" strokeLinecap="round" {...draw} />
+      <motion.path d={PATH} fill="none" stroke="#1f6224" strokeWidth="16" strokeLinejoin="round" strokeLinecap="round" {...draw} />
 
       {/* Arrow head */}
       <motion.polygon
         points="1060,60 1160,30 1128,128"
-        fill="#2e7d32"
-        stroke="#3f5b26"
+        fill="#1f6224"
+        stroke="#2b4019"
         strokeWidth="6"
         strokeLinejoin="round"
         initial={reduce ? false : { opacity: 0, scale: 0.6 }}
@@ -66,7 +66,7 @@ const GrowthLine = ({ className = '' }) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: reduce ? 0 : 1.2 + i * 0.35, duration: 0.4 }}
         >
-          <circle cx={s.x} cy={s.y} r="17" fill="#fff" stroke="#00ccff" strokeWidth="6" />
+          <circle cx={s.x} cy={s.y} r="17" fill="#fff" stroke="#0284c7" strokeWidth="6" />
           <text x={s.x + 4} y={s.y - 34} textAnchor="middle" fill="#0f2a3d" stroke="#fff" strokeWidth="8" paintOrder="stroke" fontFamily="Fredoka, sans-serif" fontWeight="600" fontSize="26">
             {s.label}
           </text>
