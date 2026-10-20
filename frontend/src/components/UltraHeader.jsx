@@ -154,7 +154,7 @@ const UltraHeader = ({ theme = 'teal' }) => {
                 to="/contact"
                 className={`px-6 py-2.5 ${t.button} text-white text-sm font-medium rounded-full transition-all hover:shadow-lg`}
               >
-                Get Started
+                Contact the Group
               </Link>
             </div>
 
@@ -219,7 +219,7 @@ const UltraHeader = ({ theme = 'teal' }) => {
                   to="/contact"
                   className={`mt-4 px-8 py-3 ${t.button} text-white rounded-full font-medium text-center`}
                 >
-                  Get Started
+                  Contact the Group
                 </Link>
               </nav>
               

@@ -6,17 +6,17 @@ const CyberhakzPage = ({ theme = 'teal' }) => {
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', accentHover: 'hover:bg-teal-700' };
 
   const services = [
-    { title: 'Penetration Testing', desc: 'Comprehensive security assessments to identify vulnerabilities before attackers do.', icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' },
-    { title: 'Threat Detection', desc: 'Advanced monitoring and real-time threat detection powered by AI-based automation.', icon: 'M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z' },
-    { title: 'Incident Response', desc: 'Rapid response and recovery services to minimize damage from security breaches.', icon: 'M13 10V3L4 14h7v7l9-11h-7z' },
-    { title: 'Strategic Security Consulting', desc: 'Expert guidance on security strategy tailored to meet specific organizational needs.', icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' }
+    { title: 'Penetration Testing', desc: 'Structured security assessments designed to identify vulnerabilities before they can be exploited.', icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' },
+    { title: 'Threat Detection', desc: 'Continuous monitoring and real-time threat detection supported by AI-based automation.', icon: 'M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z' },
+    { title: 'Incident Response', desc: 'Timely response and recovery services intended to contain and limit the impact of security incidents.', icon: 'M13 10V3L4 14h7v7l9-11h-7z' },
+    { title: 'Strategic Security Consulting', desc: 'Guidance on security strategy aligned with the specific requirements of each organisation.', icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z' }
   ];
 
   const strengths = [
-    { title: 'Proactive Security', desc: 'Comprehensive and client focused security solutions that stay ahead of threats.' },
-    { title: 'Seasoned Experts', desc: 'A team of cybersecurity professionals with deep industry knowledge.' },
-    { title: 'Innovation & Technology', desc: 'Leveraging advanced tools, AI based automation, and cutting edge methodologies.' },
-    { title: 'Transparency & Ethics', desc: 'Built on a foundation of ethical practices and client centric approach.' }
+    { title: 'Proactive Security', desc: 'A preventive approach to security that anticipates and addresses emerging threats.' },
+    { title: 'Experienced Professionals', desc: 'A team of cybersecurity professionals with substantial industry knowledge.' },
+    { title: 'Innovation & Technology', desc: 'Use of advanced tools, AI-based automation and contemporary methodologies.' },
+    { title: 'Transparency & Ethics', desc: 'A foundation of ethical practice, confidentiality and accountability to the organisations it serves.' }
   ];
 
   return (
@@ -60,13 +60,13 @@ const CyberhakzPage = ({ theme = 'teal' }) => {
               <img src="https://websitesbytechpioneers.com/alfaglobalnew/image/cyberhakz.png" alt="Cyberhakz Security" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Forward Thinking Cybersecurity</span>
+              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Cybersecurity Services</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">Cyberhakz</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                Cyberhakz is a forward thinking cybersecurity firm dedicated to providing proactive, comprehensive, and client focused security solutions. With a team of seasoned experts, Cyberhakz specializes in penetration testing, threat detection, incident response, and strategic security consulting to safeguard businesses against evolving cyber threats.
+                Cyberhakz, a company of Alfa Global Group, provides cybersecurity services to organisations. Its team of experienced professionals specialises in penetration testing, threat detection, incident response and strategic security consulting, helping businesses protect themselves against evolving cyber threats.
               </p>
               <p className="text-gray-600 leading-relaxed text-justify">
-                Driven by innovation and technological leadership, the company leverages advanced tools, AI based automation, and cutting edge methodologies to stay ahead of emerging risks. Cyberhakz is built on a foundation of transparency, ethical practices, and a client centric approach, ensuring every solution is tailored to meet specific organizational needs.
+                The Company uses advanced tools, AI-based automation and contemporary methodologies to address emerging risks. Its work rests on transparency and ethical practice, and each engagement is shaped to the specific requirements of the organisation concerned.
               </p>
             </motion.div>
           </div>
@@ -77,8 +77,8 @@ const CyberhakzPage = ({ theme = 'teal' }) => {
       <section className={`py-16 sm:py-24 ${t.accentBgLight}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Comprehensive cybersecurity solutions to protect your business from evolving threats.</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Services</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">The Company’s principal service lines for protecting organisations against evolving cyber threats.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, i) => (
@@ -98,7 +98,7 @@ const CyberhakzPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Cyberhakz</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Distinguishing Strengths</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {strengths.map((item, i) => (
@@ -122,7 +122,7 @@ const CyberhakzPage = ({ theme = 'teal' }) => {
           <div className={`p-12 rounded-2xl bg-gradient-to-r ${t.gradient} text-center`}>
             <h2 className="text-3xl font-bold text-white mb-4">Leadership</h2>
             <p className="text-white/90 max-w-4xl mx-auto leading-relaxed text-justify">
-              Led by founder Navin Hariharan, Cyberhakz combines vision, deep industry knowledge, and a relentless focus on excellence to address complex cybersecurity challenges in an ever changing digital world.
+              Cyberhakz is led by its founder, Navin Hariharan. The Company brings industry knowledge and a sustained commitment to excellence to complex cybersecurity challenges in a rapidly changing digital environment.
             </p>
           </div>
         </div>

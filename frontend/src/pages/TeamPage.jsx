@@ -234,7 +234,7 @@ Mrs. Hemalatha Karthikeyan is recognized for her commitment to excellence, adapt
             transition={{ delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-4 mb-6"
           >
-            Meet the Minds Behind Your Success
+            The Leadership of Alfa Global Group
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 30 }} 
@@ -242,7 +242,7 @@ Mrs. Hemalatha Karthikeyan is recognized for her commitment to excellence, adapt
             transition={{ delay: 0.2 }}
             className="text-white/70 text-lg max-w-2xl mx-auto text-justify"
           >
-            Our leadership team brings decades of combined experience in wealth management, investment advisory, cybersecurity, maritime operations, and strategic consulting to help you achieve your goals.
+            The Group’s leadership brings decades of combined experience across capital markets, maritime operations, cyber security, law, and enterprise building, providing the stewardship that guides each of its enterprises.
           </motion.p>
         </div>
       </section>
@@ -346,17 +346,17 @@ Mrs. Hemalatha Karthikeyan is recognized for her commitment to excellence, adapt
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-justify">
-              At Alfa Global Group, our values guide every decision we make. We are committed to excellence, integrity, and creating lasting value for our partners.
+              The values of Alfa Global Group inform every decision it takes. The Group remains committed to excellence, integrity, and the creation of lasting value for its enterprises and partners.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {[
-              { title: 'Excellence', desc: 'Highest standards in everything we do' },
+              { title: 'Excellence', desc: 'Uncompromising standards in every endeavour' },
               { title: 'Integrity', desc: 'Transparency and ethical conduct' },
-              { title: 'Innovation', desc: 'Evolving approaches to wealth creation' },
-              { title: 'Partnership', desc: 'Building lasting relationships' },
-              { title: 'Impact', desc: 'Creating positive change' },
-              { title: 'Vision', desc: 'Multi-generational wealth planning' }
+              { title: 'Innovation', desc: 'Continuous evolution in enterprise building' },
+              { title: 'Partnership', desc: 'Enduring relationships built on trust' },
+              { title: 'Impact', desc: 'Meaningful contribution to communities' },
+              { title: 'Vision', desc: 'A multi-generational outlook' }
             ].map((value, i) => (
               <motion.div
                 key={i}
@@ -382,9 +382,9 @@ Mrs. Hemalatha Karthikeyan is recognized for her commitment to excellence, adapt
       {/* CTA Section */}
       <section className={`py-16 bg-gradient-to-r ${t.gradient}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Work With Us?</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Engage with the Group</h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-8 text-justify">
-            Connect with our team of experts and discover how we can help you achieve your financial goals through strategic investments and personalized wealth management solutions.
+            The Group welcomes enquiries from founders, promoters, and strategic partners whose enterprises or projects align with its long-term investment focus.
           </p>
           <Link 
             to="/contact" 

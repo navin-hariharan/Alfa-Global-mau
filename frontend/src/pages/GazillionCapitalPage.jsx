@@ -1,56 +1,53 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PartnersLogos } from '../components/ProfessionalSections';
 
 const GazillionCapitalPage = ({ theme = 'teal' }) => {
   // Teal theme configuration
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', accentHover: 'hover:bg-teal-700' };
 
   const wealthDistribution = [
-    'Curated Mutual Fund Portfolios',
-    'Thematic, Alpha Enhanced, and Derivative Linked MF Strategies',
-    'Portfolio Management Services (PMS) – Discretionary & Non Discretionary',
-    'Alternative Investment Funds (AIFs) – Category I, II & III',
-    'Access to top tier private equity, private credit, and debt structures',
-    'Exclusive Pre IPO investments and unlisted equity opportunities'
+    'Awareness programmes on the basic functioning of financial markets',
+    'Educational sessions on savings, risk and responsible financial conduct',
+    'Information on investor rights and regulatory safeguards',
+    'General educational content that does not constitute investment advice'
   ];
 
   const privateWealth = [
-    'Bespoke portfolio solutions for HNI & UHNI clients',
-    'Strategic asset allocation and long term planning',
-    'Family office structuring and intergenerational wealth strategies',
-    'Global investment access with personalized advisory',
-    'Tax efficient structuring and liquidity planning'
+    'Sound corporate governance',
+    'Compliance with applicable laws and regulations',
+    'Transparency in corporate communication',
+    'Ethical standards of conduct',
+    'Protection of data and confidentiality'
   ];
 
   const brokingServices = [
-    'Equity, Commodity, and Currency Trading',
-    'Margin trading and derivative strategies',
-    'Real time execution and portfolio monitoring',
-    'Algorithmic and rules based trading models'
+    'Board-level oversight of the Company’s affairs',
+    'Internal policies and compliance procedures',
+    'Risk management frameworks',
+    'Regulated activities undertaken only under applicable registrations'
   ];
 
   const privateMarket = [
-    'Pre IPO and late stage unlisted equity access',
-    'Direct private equity and venture capital co investments',
-    'Structured debt and hybrid capital instruments',
-    'Leveraged buyouts (LBO), ECBs, and global fund exposure'
+    'A separately operated company within Alfa Global Group',
+    'Its own management and governance structure',
+    'Alignment with the Group’s standards of integrity',
+    'A long-term orientation consistent with the Group’s values'
   ];
 
   const investorEducation = [
-    'Trading simulations and real market case studies',
-    'Certification based capital market programs',
-    'Equity, options, and risk management training',
-    'Customized programs for HNIs, advisors, and institutions'
+    'Introductory programmes on how capital markets function',
+    'Sessions on risk awareness and financial discipline',
+    'Workshops for students and working professionals',
+    'Content intended for general awareness only'
   ];
 
   const whyGazillion = [
-    { title: 'Tailored Private Wealth Advisory', desc: 'Personalized strategies for long term value' },
-    { title: 'Veteran Leadership', desc: '200+ years of collective global market experience' },
-    { title: 'Integrated Capabilities', desc: 'From idea to execution across public and private markets' },
-    { title: 'Technology Enabled Execution', desc: 'Leveraging AI, analytics, and automation' },
-    { title: 'Pan India & Asia Pacific Network', desc: 'Strong distribution and investor ecosystem' },
-    { title: 'Client Centric Philosophy', desc: 'Transparent, relationship driven, and results focused' }
+    { title: 'Separate Operation', desc: 'Operated as a distinct company within Alfa Global Group' },
+    { title: 'Experienced Leadership', desc: 'Managed by professionals with experience in financial services' },
+    { title: 'Governance First', desc: 'Board oversight, internal controls and compliance procedures' },
+    { title: 'Financial Literacy', desc: 'A commitment to raising general awareness of financial matters' },
+    { title: 'Responsible Technology', desc: 'Prudent use of technology in the Company’s operations' },
+    { title: 'Integrity', desc: 'Transparent, ethical and accountable conduct' }
   ];
 
   return (
@@ -72,7 +69,7 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
           <motion.img initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} src="/logos/gazillion.png" alt="Gazillion Capital" className="h-20 w-auto mx-auto mb-6" />
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">Gazillion Capital</motion.h1>
-          <p className="text-white/80 text-lg mb-8">Strategic Wealth Product Distribution, Private Wealth & Broking Solutions</p>
+          <p className="text-white/80 text-lg mb-8">A Financial Services Company of Alfa Global Group</p>
           <a 
             href="https://www.gazcap.com/" 
             target="_blank" 
@@ -91,16 +88,16 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <img src="https://websitesbytechpioneers.com/alfaglobalnew/image/strategic-wealth.png" alt="Strategic Wealth" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
+              <img src="https://websitesbytechpioneers.com/alfaglobalnew/image/strategic-wealth.png" alt="Gazillion Capital" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Next Generation Financial Services</span>
+              <span className={`${t.accentText} text-sm font-semibold tracking-widest uppercase`}>Group Company in Financial Services</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-6">About Gazillion Capital</h2>
               <p className="text-gray-600 mb-6 leading-relaxed text-justify">
-                Gazillion Capital is a next generation financial services firm specializing in the distribution of wealth management products, private wealth solutions, and broking services across asset classes. Built on a foundation of trust, innovation, and performance, we empower clients including individuals, families, and institutions to navigate today's complex markets through a combination of curated offerings, expert led guidance, and seamless execution.
+                Gazillion Capital Private Limited is a separately operated company of Alfa Global Group in the financial services sector. It has its own management and governance structure, and it is guided by the Group’s commitment to integrity, transparency and responsible conduct.
               </p>
               <p className="text-gray-600 leading-relaxed text-justify">
-                Our comprehensive services include equity, commodity, and currency trading, as well as the distribution of mutual funds, Portfolio Management Services (PMS), Alternative Investment Funds (AIFs), and private market investment opportunities, including access to Pre IPO and high growth unlisted equity deals. We also equip investors and professionals through advanced capital markets training, simulations, and hands on mentorship, ensuring they are confident and informed in their investment decisions.
+                The Company supports financial literacy initiatives intended to improve general awareness of how financial markets function. This page provides corporate information only. It does not offer broking, distribution of financial products, or investment advice to the public, and nothing on it constitutes a solicitation or recommendation. Any regulated activities of the Company are undertaken separately, under and in accordance with the applicable registrations.
               </p>
             </motion.div>
           </div>
@@ -112,10 +109,10 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/8df3010dfa69d83fbba688213d2865dcbef9aa956fdb6c520db7ce0da725a6f3.png" alt="Gazillion Services" className="rounded-2xl shadow-xl w-full h-[350px] object-cover" />
+              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/8df3010dfa69d83fbba688213d2865dcbef9aa956fdb6c520db7ce0da725a6f3.png" alt="Gazillion Capital Operations" className="rounded-2xl shadow-xl w-full h-[350px] object-cover" />
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
-              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/af5f4527cb96fde6f01a82dfacd99dbeb3db4d41aeefc404f3dbddf952e41fec.png" alt="Gazillion Platform" className="rounded-2xl shadow-xl w-full h-[350px] object-cover" />
+              <img src="https://static.prod-images.emergentagent.com/jobs/9d0cdaeb-5a99-4d15-9a0a-459e9e0b885c/images/af5f4527cb96fde6f01a82dfacd99dbeb3db4d41aeefc404f3dbddf952e41fec.png" alt="Gazillion Capital Initiatives" className="rounded-2xl shadow-xl w-full h-[350px] object-cover" />
             </motion.div>
           </div>
         </div>
@@ -126,7 +123,7 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">1. Wealth Product Distribution</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">1. Financial Literacy Initiatives</h3>
               <ul className="space-y-3">
                 {wealthDistribution.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600">
@@ -137,7 +134,7 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
               </ul>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">2. Private Wealth Management</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">2. Corporate Principles</h3>
               <ul className="space-y-3">
                 {privateWealth.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600">
@@ -156,7 +153,7 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-white p-8 rounded-2xl shadow-md">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">3. Broking & Trading Services</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">3. Governance & Compliance</h3>
               <ul className="space-y-3">
                 {brokingServices.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600 text-sm">
@@ -167,7 +164,7 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
               </ul>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-white p-8 rounded-2xl shadow-md">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">4. Private Market & Alternative Investments</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">4. Relationship with the Group</h3>
               <ul className="space-y-3">
                 {privateMarket.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600 text-sm">
@@ -178,7 +175,7 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
               </ul>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-white p-8 rounded-2xl shadow-md">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">5. Investor Education & Training</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">5. Financial Education Programmes</h3>
               <ul className="space-y-3">
                 {investorEducation.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-600 text-sm">
@@ -196,12 +193,12 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Philosophy</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Philosophy</h2>
             <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed text-justify">
-              At Gazillion Capital, we believe capital should never remain idle. Our philosophy is anchored in actively deploying client capital into a diversified, optimized portfolio of curated investment products spanning mutual funds, PMS, AIFs, private equity, Pre IPO, debt, and alternative strategies.
+              Gazillion Capital believes that sound financial understanding contributes to a more resilient economy and society. The Company’s philosophy rests on responsible conduct, strong governance and respect for the regulatory framework within which it operates.
             </p>
             <p className="text-gray-600 max-w-4xl mx-auto leading-relaxed text-justify mt-4">
-              We focus on continuous capital deployment into high conviction, research backed opportunities, carefully tailored to each client's unique goals and risk profile. Through disciplined allocation, risk managed execution, and tax efficient structuring, we ensure that every investment decision contributes meaningfully to long-term wealth creation.
+              The Company’s educational initiatives are intended for general awareness only and do not constitute investment advice, research or recommendations.
             </p>
           </div>
         </div>
@@ -211,7 +208,7 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
       <section className={`py-16 sm:py-24 ${t.accentBgLight}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Gazillion Capital?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Guiding Principles</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyGazillion.map((item, i) => (
@@ -231,19 +228,16 @@ const GazillionCapitalPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <div className={`p-12 rounded-2xl bg-gradient-to-r ${t.gradient} text-center`}>
-            <h2 className="text-3xl font-bold text-white mb-6">Our Commitment</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">Commitment</h2>
             <p className="text-white/90 max-w-4xl mx-auto leading-relaxed text-justify mb-6">
-              We don't just distribute products – we deliver integrated, high impact wealth and investment solutions. Whether it's accessing exclusive Pre IPO pipelines, deploying capital through world class AIFs and PMS, or managing family wealth with precision, Gazillion Capital is your trusted partner in building and preserving capital across generations.
+              Gazillion Capital is committed to the highest standards of governance, compliance and ethical conduct in all its activities, and to supporting financial awareness in the communities it serves.
             </p>
             <p className="text-white/90 max-w-4xl mx-auto leading-relaxed text-justify">
-              Gazillion Capital is a premier financial services firm offering tailored investment strategies driven by innovation, industry expertise, and a strong commitment to client success. With a firm foothold in the dynamic investment landscape, we empower clients to navigate today's fast evolving markets with confidence.
+              As a member of Alfa Global Group, the Company shares the Group’s long-term orientation and its commitment to integrity, transparency and accountability.
             </p>
           </div>
         </div>
       </section>
-
-      {/* Regulated & Certified By */}
-      <PartnersLogos theme={theme} />
     </div>
   );
 };

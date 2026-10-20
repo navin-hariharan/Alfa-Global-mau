@@ -38,7 +38,7 @@ const UltraFooter = ({ theme = 'teal' }) => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="inline-block bg-white rounded-lg px-3 py-2 mb-4"><img src={`${process.env.PUBLIC_URL}/alfa-logo.png`} alt="Alfa Global Group" className="h-9 w-auto" /></div>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-              A strategic investment and holding company building enduring businesses and legacies across generations.
+              A diversified strategic investment and holding company, building enduring enterprises across generations.
             </p>
             <div className="flex gap-3">
               {['linkedin', 'twitter', 'facebook'].map((social) => (

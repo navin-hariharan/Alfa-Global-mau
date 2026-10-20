@@ -79,7 +79,7 @@ const PremiumContact = ({ theme = 'teal' }) => {
           >
             <span className={`${t.accentText} text-sm tracking-[0.2em] uppercase`}>Get in Touch</span>
             <h1 className="text-4xl md:text-5xl font-bold text-white mt-2 mb-4">Contact Us</h1>
-            <p className="text-white/60">Have a business, project, or partnership in mind? We’d like to hear from you.</p>
+            <p className="text-white/60">The Group welcomes enquiries regarding strategic partnerships, joint ventures, and enterprise proposals.</p>
           </motion.div>
         </div>
       </section>
@@ -188,13 +188,13 @@ const PremiumContact = ({ theme = 'teal' }) => {
 
                 {submitStatus === 'success' && (
                   <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400 text-center">
-                    Thank you! We'll get back to you soon.
+                    Thank you. Your enquiry has been received, and a member of the Group will respond shortly.
                   </motion.div>
                 )}
 
                 {submitStatus === 'error' && (
                   <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="p-4 bg-red-500/20 border border-red-500/50 rounded-lg text-red-400 text-center">
-                    Something went wrong. Please try again.
+                    Your enquiry could not be submitted. Please try again, or write to contact@alfaglobalwealth.com.
                   </motion.div>
                 )}
               </form>

@@ -7,23 +7,23 @@ const StrategyPage = ({ theme = 'teal' }) => {
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', accentBorder: 'border-teal-200', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', heroAccent: 'text-teal-400' };
 
   const pillars = [
-    { num: '1', title: 'Diversification for Stability', desc: 'We hold a balanced mix of businesses across industries to reduce concentration risk and unlock opportunity. From strategic holdings and shipping to sustainable agriculture, infrastructure, and cybersecurity, diversification makes the Group resilient.' },
-    { num: '2', title: 'Opportunity-Centric Solutions', desc: 'Our strategy is built on identifying and anticipating opportunities early, and backing businesses and projects where the Group can add capital, expertise, and partnerships.' },
-    { num: '3', title: 'Innovation & Technology', desc: 'We harness technology platforms, data, and advanced digital tools across our businesses. Innovation powers efficiency, transparency, and smarter decision-making across all our ventures.' },
-    { num: '4', title: 'Global Expansion with Local Impact', desc: 'Our presence spans domestic and international markets, but our focus remains on creating meaningful local impact. We invest in industries that strengthen communities while building sustainable long-term value.' },
-    { num: '5', title: 'Responsibility & Governance', desc: 'We embrace responsible investing and governance as non negotiable. From sustainable projects in agriculture to compliance driven solutions in technology, we align business growth with environmental and social responsibility.' }
+    { num: '1', title: 'Diversification for Stability', desc: 'The Group maintains a balanced presence across industries to mitigate concentration risk and broaden opportunity. Diversification across strategic holdings, maritime, sustainable agriculture, infrastructure, and cyber security underpins the Group’s resilience.' },
+    { num: '2', title: 'Disciplined Opportunity Selection', desc: 'The Group’s strategy rests on identifying opportunities early and committing to enterprises and projects where it can contribute capital, expertise, and strategic partnerships.' },
+    { num: '3', title: 'Innovation and Technology', desc: 'Technology platforms, data, and advanced digital tools are embedded across the Group’s enterprises, strengthening efficiency, transparency, and the quality of decision-making.' },
+    { num: '4', title: 'Global Expansion with Local Impact', desc: 'While the Group’s presence extends across domestic and international markets, its focus remains on meaningful local impact, investing in industries that strengthen communities and build sustainable long-term value.' },
+    { num: '5', title: 'Responsibility and Governance', desc: 'Sound governance and responsible stewardship are fundamental to the Group. From sustainable agricultural projects to compliance-led technology operations, growth is aligned with environmental and social responsibility.' }
   ];
 
   const execution = [
-    { title: 'Data Driven Decisions', desc: 'Careful analysis and due diligence guide risk management and opportunity selection.' },
-    { title: 'Strategic Partnerships', desc: 'Collaborating with founders, operators, and industry leaders worldwide.' },
-    { title: 'Scalable Models', desc: 'Ventures designed to grow with evolving opportunities and markets.' },
-    { title: 'Performance Monitoring', desc: 'Regular reviews ensure consistent delivery, compliance, and alignment with long term goals.' }
+    { title: 'Rigorous Evaluation', desc: 'Comprehensive analysis and due diligence inform risk management and opportunity selection.' },
+    { title: 'Strategic Partnerships', desc: 'Collaboration with founders, operators, and industry leaders worldwide.' },
+    { title: 'Scalable Enterprises', desc: 'Ventures structured to scale with evolving markets and opportunities.' },
+    { title: 'Active Oversight', desc: 'Regular reviews ensure consistent delivery, compliance, and alignment with long-term objectives.' }
   ];
 
   const stats = [
     { value: '30+', label: 'Years of combined leadership experience' },
-    { value: 'Proven', label: 'Track record in building and growing multi-sector businesses' }
+    { value: 'Proven', label: 'Track record in building and scaling multi-sector enterprises' }
   ];
 
   return (
@@ -40,7 +40,7 @@ const StrategyPage = ({ theme = 'teal' }) => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Our Strategic Approach</h2>
             <p className="text-gray-600 mt-4 max-w-4xl mx-auto leading-relaxed text-justify">
-              At Alfa Global Group, strategy drives everything we do. Our businesses span strategic holdings, technology, infrastructure, shipping, manufacturing, agriculture, and cybersecurity – yet all businesses are guided by a unified approach: combining innovation, disciplined risk management, and long term vision to deliver sustainable growth and impact.
+              Strategy informs every decision at Alfa Global Group. Although its enterprises span strategic holdings, technology, infrastructure, maritime, manufacturing, agriculture, and cyber security, each is guided by a unified approach that combines innovation, disciplined risk management, and long-term vision to deliver sustainable growth and impact.
             </p>
           </motion.div>
         </div>
@@ -67,7 +67,7 @@ const StrategyPage = ({ theme = 'teal' }) => {
 
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">How We Execute Strategy</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Strategic Execution</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {execution.map((item, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className={`p-6 rounded-xl border ${t.accentBorder}`}>
@@ -82,7 +82,7 @@ const StrategyPage = ({ theme = 'teal' }) => {
 
       <section className={`py-16 sm:py-24 bg-gradient-to-r ${t.gradient}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
-          <h2 className="text-3xl font-bold text-white text-center mb-12">Why Our Strategy Works</h2>
+          <h2 className="text-3xl font-bold text-white text-center mb-12">The Strength of the Approach</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {stats.map((stat, i) => (
               <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center">

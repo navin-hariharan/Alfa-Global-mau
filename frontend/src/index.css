@@ -15,7 +15,13 @@ body {
 
 /* Global justified text for all paragraphs */
 p {
-  text-align: justify;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  p {
+    text-align: justify;
+  }
 }
 
 

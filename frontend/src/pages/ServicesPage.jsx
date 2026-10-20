@@ -7,17 +7,17 @@ const ServicesPage = ({ theme = 'teal' }) => {
   const t = { accentText: 'text-teal-600', accentBg: 'bg-teal-600', accentBgLight: 'bg-teal-50', accentBorder: 'border-teal-200', accentHover: 'hover:bg-teal-700', gradient: 'from-teal-600 to-teal-700', heroBg: 'from-teal-950 via-slate-950 to-teal-950', heroAccent: 'text-teal-400', checkColor: 'text-teal-500' };
 
   const services = [
-    { icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/trading.png', title: 'Fintech & Proprietary Technology', desc: 'Alfa Zillion Traders LLP builds in-house fintech platforms, data tools, and quantitative models, and trades solely on its own account. It does not manage money or offer trading advice to others.' },
-    { icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/allocation.png', title: 'Strategic Holdings & Shipping', desc: 'Through Alfa Star Dynamics and Dhanveir Groups Shipping, the Group takes long-term stakes in maritime and industrial businesses and builds, owns, and operates Indian-flagged vessels across key cargo segments.' },
-    { icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/natural-resources.png', title: 'Agriculture & Natural Resources', desc: 'Through MK Dairy Farms Pvt Ltd, we bring innovation to agriculture, dairy, and natural resources distribution. Our sustainable practices support rural economies while ensuring supply chain reliability and quality output.' },
-    { icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/clean-computer-virus.png', title: 'Cyber Security Solutions', desc: 'Cyberhakz Pvt Ltd delivers enterprise grade cyber security services to protect businesses from evolving threats. From network security to compliance and threat detection, we help organizations safeguard their assets and maintain trust in a digital world.' }
+    { icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/trading.png', title: 'Financial Technology', desc: 'Alfa Zillion Traders LLP develops proprietary financial technology platforms, data tools, and quantitative models, and transacts solely on its own account. It neither manages funds on behalf of others nor provides trading advice.' },
+    { icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/allocation.png', title: 'Strategic Holdings and Maritime', desc: 'Through Alfa Star Dynamics and Dhanveir Groups Shipping, the Group holds long-term interests in maritime and industrial enterprises, and builds, owns, and operates Indian-flagged vessels across key cargo segments.' },
+    { icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/natural-resources.png', title: 'Agriculture and Natural Resources', desc: 'Through MK Dairy Farms Pvt Ltd, the Group brings innovation to agriculture, dairy, and natural resource distribution. Its sustainable practices strengthen rural economies while ensuring supply chain reliability and consistent quality.' },
+    { icon: 'https://websitesbytechpioneers.com/alfaglobalnew/image/clean-computer-virus.png', title: 'Cyber Security', desc: 'Cyberhakz Pvt Ltd provides enterprise-grade cyber security services that protect organisations from evolving threats. Its capabilities, spanning network security, regulatory compliance, and threat detection, enable enterprises to safeguard critical assets and preserve stakeholder trust.' }
   ];
 
   const whyChoose = [
-    { title: 'Diversified Portfolio', desc: 'Diversified portfolio spanning finance, technology, agriculture, and security' },
-    { title: '30+ Years Experience', desc: '30+ years of leadership experience across industries and global markets' },
-    { title: 'Long-Term Ownership', desc: 'Patient, long-term ownership with hands-on support for every business we back' },
-    { title: 'Innovation Driven', desc: 'Innovation driven execution leveraging fintech, AI, and cyber technologies' }
+    { title: 'Diversified Enterprise Base', desc: 'Enterprises spanning maritime, technology, agriculture, and security' },
+    { title: '30+ Years of Leadership', desc: 'More than three decades of combined leadership experience across industries and international markets' },
+    { title: 'Long-Term Ownership', desc: 'Patient ownership and active stewardship of every enterprise within the Group' },
+    { title: 'Innovation Led', desc: 'Execution informed by financial technology, data, and cyber security expertise' }
   ];
 
   return (
@@ -50,7 +50,7 @@ const ServicesPage = ({ theme = 'teal' }) => {
       {/* CTA Banner */}
       <section className={`py-12 ${t.accentBgLight}`}>
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
-          <p className="text-gray-700 text-lg mb-4">Have a business or project that fits our focus? Let’s explore building it together.</p>
+          <p className="text-gray-700 text-lg mb-4">Enterprises and projects aligned with the Group’s investment focus are invited to initiate a dialogue.</p>
           <Link to="/contact" className={`inline-flex items-center gap-2 px-8 py-4 ${t.accentBg} text-white font-semibold rounded-lg ${t.accentHover} transition-all`}>
             Get a Free Strategy Call <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </Link>
@@ -61,7 +61,7 @@ const ServicesPage = ({ theme = 'teal' }) => {
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Why Choose Alfa Global Services?</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">The Alfa Global Distinction</h2>
           </motion.div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyChoose.map((item, i) => (
